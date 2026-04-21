@@ -1,0 +1,270 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "powershell.exe"
+            }
+        }
+    },
+    "tasks": [
+        // Install the requirements
+        {
+            "label": "Install the requirements",
+            "type": "shell",
+            "command": "pip",
+            "args": ["install", "-r", "${workspaceRoot}/requirements.txt"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "group": "install",
+                "clear": true
+            },
+        },
+        // Show prompts to choose example and board and save it in the project_config.json.
+        {
+            "label": "Choose a configuration",
+            "type": "shell",
+            "command": "${command:python.interpreterPath}",
+            "args": ["set_config.py", "${input:saveExample}", "${input:saveBoard}", "${input:saveBuild}", "--flags='${input:saveFlags}'"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}/.vscode/scripts"
+            },
+            "presentation": {
+                "group": "config",
+                "clear": true
+            }
+        },
+        // Print the saved configuration from the project_config.json.
+        {
+            "label": "Check the configuration",
+            "type": "shell",
+            "command": "echo",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "group": "config",
+                "clear": true
+            },
+            "args": ["*** CURRENT CONFIGURATION: EXAMPLE=${input:exampleConfig} BOARD=${input:boardConfig} CPU=${input:cpuConfig} BUILD=${input:buildConfig} FLAGS=\"${input:flagsConfig}\" ***\n\n"]
+        },
+        // Print the saved configuration from the project_config.json.
+        {
+            "label": "Build the firmware",
+            "type": "shell",
+            "dependsOn": "_create target",
+            "command": "make all V=1 -j",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "group": "build"
+            }
+        },
+        // Flash the target (the firmware needs to be already built).
+        {
+            "label": "Flash the target",
+            "type": "shell",
+            "command": "${command:python.interpreterPath}",
+            "args": ["flash_target.py", "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}/${input:boardConfig}-${input:exampleConfig}-FreeRTOS.hex", "${input:cpuConfig}"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}/.vscode/scripts"
+            },
+            "presentation": {
+                "group": "flash"
+            }
+        },
+        // Rebuild the target and flash the board.
+        {
+            "label": "Build & flash the target",
+            "type": "shell",
+            "dependsOn": "Build the firmware",
+            "command": "${command:python.interpreterPath}",
+            "args": ["flash_target.py", "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}/${input:boardConfig}-${input:exampleConfig}-FreeRTOS.hex", "${input:cpuConfig}"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}/.vscode/scripts"
+            },
+            "presentation": {
+                "group": "build"
+            }
+        },
+        // Remove the build output and build the fresh target.
+        {
+            "label": "Build the clean firmware",
+            "type": "shell",
+            "dependsOn": "_force create target",
+            "command": "make all V=1 -j",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "group": "build"
+            }
+        },
+        // Create the target only if it does not exist (for re-build).
+        {
+            "label": "_create target",
+            "type": "shell",
+            "group": {
+                "kind": "build"
+            },
+            "command": "${command:python.interpreterPath}",
+            "args": ["${workspaceRoot}/Projects/FreeRTOS/${input:exampleConfig}/${input:boardConfig}/CreateTarget.py", "-build", "${input:buildConfig}", "-no-force"],
+            "hide": true,
+            "presentation": {
+                "group": "build",
+                "clear": true
+            }
+        },
+        // Create the target (for clean build).
+        {
+            "label": "_force create target",
+            "type": "shell",
+            "group": {
+                "kind": "build"
+            },
+            "command": "${command:python.interpreterPath}",
+            "args": ["${workspaceRoot}/Projects/FreeRTOS/${input:exampleConfig}/${input:boardConfig}/CreateTarget.py", "-build", "${input:buildConfig}"],
+            "hide": true,
+            "presentation": {
+                "group": "build",
+                "clear": true
+            }
+        }
+    ],
+    "inputs": [
+        // Show prompt to choose the example type.
+        {
+            "id": "saveExample",
+            "type": "command",
+            "command": "extension.commandvariable.pickStringRemember",
+            "args": {
+                "key": "example_type",
+                "options": ["UCI", "CLI", "QANI", "HelloWorld"],
+                "default": "UCI",
+                "description": "Choose a example type"
+            }
+        },
+        // Show prompt to choose the board type.
+        {
+            "id": "saveBoard",
+            "type": "command",
+            "command": "extension.commandvariable.pickStringRemember",
+            "args": {
+                "key": "board_type",
+                "options": ["nRF52840DK", "DWM3001CDK", "Type2AB_EVB"],
+                "default": "nRF52840DK",
+                "description": "Choose a devkit board"
+            }
+        },
+        // Show prompt to choose the build type.
+        {
+            "id": "saveBuild",
+            "type": "command",
+            "command": "extension.commandvariable.pickStringRemember",
+            "args": {
+                "key": "build_type",
+                "options": ["Debug", "Release", "RelWithDebInfo", "MinSizeRel", "Custom"],
+                "default": "Debug",
+                "description": "Choose a build type"
+            }
+        },
+        // Show prompt to choose the flags.
+        {
+            "id": "saveFlags",
+            "type": "command",
+            "command": "extension.commandvariable.promptStringRemember",
+            "args": {
+                "key": "flags_list",
+                "description": "Enter custom flags. Option is only available for Custom build type."
+            }
+        },
+        // Get the configured CPU from the project_config.json.
+        {
+            "id": "cpuConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceFolder}/.vscode/project_config.json",
+                "json": "content.cpu",
+                "keyRemember": "cpu"
+            }
+        },
+        // Get the configured board type from the project_config.json.
+        {
+            "id": "boardConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceFolder}/.vscode/project_config.json",
+                "json": "content.board",
+                "keyRemember": "board"
+            }
+        },
+        // Get the configured example type from the project_config.json.
+        {
+            "id": "exampleConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceFolder}/.vscode/project_config.json",
+                "json": "content.example",
+                "keyRemember": "example"
+            }
+        },
+        // Get the configured build type from the project_config.json.
+        {
+            "id": "buildConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceFolder}/.vscode/project_config.json",
+                "json": "content.build",
+                "keyRemember": "build"
+            }
+        },
+        // Get the configured flags from the project_config.json.
+        {
+            "id": "flagsConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+                "fileName": "${workspaceFolder}/.vscode/project_config.json",
+                "json": "content.flags",
+                "keyRemember": "flags"
+            }
+        }
+    ]
+}

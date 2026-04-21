@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libHelpers.a CMakeFiles/Helpers.dir/cJSON.c.obj CMakeFiles/Helpers.dir/circular_buffer.c.obj CMakeFiles/Helpers.dir/uwb_convert.c.obj
+/usr/bin/arm-none-eabi-ranlib libHelpers.a

@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libInterface.a CMakeFiles/Interface.dir/Src/InterfUsb.c.obj
+/usr/bin/arm-none-eabi-ranlib libInterface.a

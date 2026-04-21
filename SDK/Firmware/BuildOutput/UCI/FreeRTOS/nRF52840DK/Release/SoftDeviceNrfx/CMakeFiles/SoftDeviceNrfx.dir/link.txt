@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libSoftDeviceNrfx.a CMakeFiles/SoftDeviceNrfx.dir/s113_nrf52_7.2.0_softdevice.c.obj
+/usr/bin/arm-none-eabi-ranlib libSoftDeviceNrfx.a

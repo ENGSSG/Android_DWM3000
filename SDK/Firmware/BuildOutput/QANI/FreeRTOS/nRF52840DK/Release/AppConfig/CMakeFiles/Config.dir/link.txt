@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libConfig.a CMakeFiles/Config.dir/Src/config.c.obj
+/usr/bin/arm-none-eabi-ranlib libConfig.a

@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libreporter.a CMakeFiles/reporter.dir/usb_reporter/usb_reporter.c.obj CMakeFiles/reporter.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj CMakeFiles/reporter.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libreporter.a

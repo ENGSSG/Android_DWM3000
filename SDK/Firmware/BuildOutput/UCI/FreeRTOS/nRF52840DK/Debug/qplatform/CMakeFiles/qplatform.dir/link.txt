@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libqplatform.a CMakeFiles/qplatform.dir/qm33_qhal_common/src/qplatform.c.obj CMakeFiles/qplatform.dir/qm33_qhal_non_zephyr/src/qplatform.c.obj
+/usr/bin/arm-none-eabi-ranlib libqplatform.a

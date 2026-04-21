@@ -1,0 +1,125 @@
+uci/CMakeFiles/uci.dir/task_uci/task_uci.c.obj: \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/task_uci/task_uci.c \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/task_uci/task_uci.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./controlTask/controlTask.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/circular_buffer.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/default_coordinator.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_coordinator.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_mac.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci/uci.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmutex.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci/uci_compat.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/nano/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/reent.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/sys/_types.h \
+ /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/assert.h \
+ /usr/include/newlib/sys/cdefs.h /usr/include/newlib/sys/string.h \
+ /usr/include/newlib/sys/types.h /usr/include/newlib/sys/_stdint.h \
+ /usr/include/newlib/sys/_pthreadtypes.h \
+ /usr/include/newlib/machine/types.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qassert.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmalloc.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci/uci_spec_fira.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci/uci_spec_qorvo.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/uwbmac.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/uwbmac_buf.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/uwbmac_types.h \
+ /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/uwbmac_buf_malloc.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/uwbmac_msg.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_mac_calibrations.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_pctt.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_fira.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_antenna_helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci/uci_message.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/fira_helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/net/fbs_region_params.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/quwbs/fbs/defs.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/quwbs/msg.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/qobpack.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/qblk.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdalign.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/qtils.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/quwbs/config.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/quwbs/err.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/quwbs/quwbs.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/net/fira_region_params.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/fbs_helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/net/fbs_region_nl.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_core.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_manager.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/uwbmac/pctt_helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uci_bundle/uci_backend/uci_backend_cfg_mgr.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/./uci_parser.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./app/common/app.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/deca_error.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/./uci_transport/include/uci_transport.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/./uwbmac_helper/include/uwbmac_helper.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/rtls_version.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmsg_queue.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./task/task_signal.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
+ /usr/include/newlib/stdio.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+ /usr/include/newlib/sys/stdio.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsignal.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/../../Inc/int_priority.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../../Boards/Src/nRF52840DK/Common/custom_board.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/boards/pca10056.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_gpio.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/nrfx.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_config.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_common.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf_peripherals.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_peripherals.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_glue.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/legacy/apply_old_config.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs_nrf52840.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_coredep.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_atomic.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_resources.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_errors.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_spim.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../Inc/HAL_error.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qlog.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/UWB/Inc/uwb_utils.h

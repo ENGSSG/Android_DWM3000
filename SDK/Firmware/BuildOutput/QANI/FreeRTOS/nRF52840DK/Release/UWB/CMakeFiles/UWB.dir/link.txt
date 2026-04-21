@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libUWB.a CMakeFiles/UWB.dir/uwb_translate.c.obj CMakeFiles/UWB.dir/uwb_utils.c.obj CMakeFiles/UWB.dir/mcps_crypto.c.obj CMakeFiles/UWB.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj CMakeFiles/UWB.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libUWB.a

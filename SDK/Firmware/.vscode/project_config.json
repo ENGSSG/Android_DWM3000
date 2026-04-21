@@ -1,0 +1,7 @@
+{
+    "example": "UCI",
+    "board": "nRF52840DK",
+    "cpu": "nrf52840",
+    "build": "Debug",
+    "flags": ""
+}

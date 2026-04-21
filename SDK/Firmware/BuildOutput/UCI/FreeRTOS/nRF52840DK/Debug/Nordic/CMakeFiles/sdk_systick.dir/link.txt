@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libsdk_systick.a CMakeFiles/sdk_systick.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj
+/usr/bin/arm-none-eabi-ranlib libsdk_systick.a

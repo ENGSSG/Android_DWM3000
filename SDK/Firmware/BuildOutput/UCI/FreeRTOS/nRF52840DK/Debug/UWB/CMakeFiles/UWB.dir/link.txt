@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libUWB.a CMakeFiles/UWB.dir/uwb_translate.c.obj CMakeFiles/UWB.dir/uwb_utils.c.obj CMakeFiles/UWB.dir/mcps_crypto.c.obj
+/usr/bin/arm-none-eabi-ranlib libUWB.a

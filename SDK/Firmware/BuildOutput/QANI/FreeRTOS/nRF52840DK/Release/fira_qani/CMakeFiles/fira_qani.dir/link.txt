@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libfira_qani.a CMakeFiles/fira_qani.dir/fira_niq.c.obj CMakeFiles/fira_qani.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj CMakeFiles/fira_qani.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libfira_qani.a

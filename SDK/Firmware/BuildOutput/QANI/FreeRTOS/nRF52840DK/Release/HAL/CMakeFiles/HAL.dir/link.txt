@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libHAL.a CMakeFiles/HAL.dir/HAL_crypto.c.obj CMakeFiles/HAL.dir/HAL_watchdog.c.obj CMakeFiles/HAL.dir/HAL_uart.c.obj CMakeFiles/HAL.dir/HAL_error.c.obj CMakeFiles/HAL.dir/HAL_usb.c.obj CMakeFiles/HAL.dir/HAL_cpu.c.obj CMakeFiles/HAL.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj CMakeFiles/HAL.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libHAL.a

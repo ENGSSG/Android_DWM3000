@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libHelpers.a CMakeFiles/Helpers.dir/cJSON.c.obj CMakeFiles/Helpers.dir/circular_buffer.c.obj CMakeFiles/Helpers.dir/uwb_convert.c.obj CMakeFiles/Helpers.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj CMakeFiles/Helpers.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libHelpers.a

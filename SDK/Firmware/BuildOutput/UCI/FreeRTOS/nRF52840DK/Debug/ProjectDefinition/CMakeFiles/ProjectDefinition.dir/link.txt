@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libProjectDefinition.a CMakeFiles/ProjectDefinition.dir/ProjectName.c.obj CMakeFiles/ProjectDefinition.dir/__/isr_hs.c.obj
+/usr/bin/arm-none-eabi-ranlib libProjectDefinition.a

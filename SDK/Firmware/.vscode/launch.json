@@ -1,0 +1,125 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug the firmware",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}/${input:boardConfig}-${input:exampleConfig}-FreeRTOS.elf",
+            "rtos" : "FreeRTOS",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "${input:cpuConfig}_xxaa",
+            "svdFile": "${workspaceRoot}/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/${input:cpuConfig}.svd",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "presentation": {"hidden": false},
+            "linux": {
+                "serverpath": "/usr/bin/JLinkGDBServerCLExe",
+                "armToolchainPath": "/opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin",
+                "gdbPath": "/opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb"
+            },
+            "windows": {
+                "serverpath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+                "armToolchainPath": "C:/GnuToolsArmForEmbedded/gcc-arm-none-eabi-10.3-2021.10/bin",
+            },
+            "serverArgs": ["-gui"],
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "decoders": [
+                    {
+                        "label": "",
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            },
+        },
+        {
+            "name": "Build & debug the firmware",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/BuildOutput/${input:exampleConfig}/FreeRTOS/${input:boardConfig}/${input:buildConfig}/${input:boardConfig}-${input:exampleConfig}-FreeRTOS.elf",
+            "rtos" : "FreeRTOS",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "${input:cpuConfig}_xxaa",
+            "svdFile": "${workspaceRoot}/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/${input:cpuConfig}.svd",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build the firmware",
+            "presentation": {"hidden": false},
+            "linux": {
+                "serverpath": "/usr/bin/JLinkGDBServerCLExe",
+                "armToolchainPath": "/opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin",
+                "gdbPath": "/opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb"
+            },
+            "windows": {
+                "serverpath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+                "armToolchainPath": "C:/GnuToolsArmForEmbedded/gcc-arm-none-eabi-10.3-2021.10/bin",
+            },
+            "serverArgs": ["-gui"],
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "decoders": [
+                    {
+                        "label": "",
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            },
+        },
+    ],
+    "inputs": [
+        // Get the configured CPU from the project_config.json.
+        {
+            "id": "cpuConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+              "fileName": "${workspaceFolder}/.vscode/project_config.json",
+              "json": "content.cpu",
+              "keyRemember": "cpu",
+            }
+        },
+        // Get configured board type from project_config.json.
+        {
+            "id": "boardConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+              "fileName": "${workspaceFolder}/.vscode/project_config.json",
+              "json": "content.board",
+              "keyRemember": "board",
+            }
+        },
+        // Get configured example type from project_config.json.
+        {
+            "id": "exampleConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+              "fileName": "${workspaceFolder}/.vscode/project_config.json",
+              "json": "content.example",
+              "keyRemember": "example",
+            }
+        },
+        // Get the configured build type from the project_config.json.
+        {
+            "id": "buildConfig",
+            "type": "command",
+            "command": "extension.commandvariable.file.content",
+            "args": {
+              "fileName": "${workspaceFolder}/.vscode/project_config.json",
+              "json": "content.build",
+              "keyRemember": "build",
+            }
+        },
+    ]
+}

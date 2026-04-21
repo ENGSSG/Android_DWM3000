@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libqmath.a CMakeFiles/qmath.dir/src/qmath.c.obj
+/usr/bin/arm-none-eabi-ranlib libqmath.a

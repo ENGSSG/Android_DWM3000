@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libBoard.a CMakeFiles/Board.dir/FreeRTOS/nRF52840DK.c.obj CMakeFiles/Board.dir/platform_l1_config.c.obj CMakeFiles/Board.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libBoard.a

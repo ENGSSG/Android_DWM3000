@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libqplatform_deca_compat.a CMakeFiles/qplatform_deca_compat.dir/qm33_qhal_common/src/qplatform_deca_impl.c.obj
+/usr/bin/arm-none-eabi-ranlib libqplatform_deca_compat.a

@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libuci.a CMakeFiles/uci.dir/task_uci/task_uci.c.obj CMakeFiles/uci.dir/uci_transport/src/uci_transport.c.obj CMakeFiles/uci.dir/uci_parser.c.obj CMakeFiles/uci.dir/uwbmac_helper/src/uwbmac_helper_dw3000.c.obj
+/usr/bin/arm-none-eabi-ranlib libuci.a

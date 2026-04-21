@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libfira.a CMakeFiles/fira.dir/fira_dw3000.c.obj CMakeFiles/fira.dir/common_fira.c.obj
+/usr/bin/arm-none-eabi-ranlib libfira.a

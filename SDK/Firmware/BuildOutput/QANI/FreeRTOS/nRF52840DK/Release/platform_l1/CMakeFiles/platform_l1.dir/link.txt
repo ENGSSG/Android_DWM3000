@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libplatform_l1.a CMakeFiles/platform_l1.dir/platform_l1_config.c.obj CMakeFiles/platform_l1.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
+/usr/bin/arm-none-eabi-ranlib libplatform_l1.a
