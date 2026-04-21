@@ -461,10 +461,430 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.s"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.s
 
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/button/app_button.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/button/app_button.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/button/app_button.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/button/app_button.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fds/fds.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fds/fds.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fds/fds.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fds/fds.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s
+
+Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_sdh_soc.c
+Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj -MF CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj.d -o CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_sdh_soc.c
+
+Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_sdh_soc.c > CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.i
+
+Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_sdh_soc.c -o CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c > CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf.c > CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf.c -o CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c > CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c -o CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c > CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c > CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c > CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i
+
+Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s"
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c -o CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s
+
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.i: cmake_force
@@ -478,7 +898,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.s: cma
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.i: cmake_force
@@ -492,7 +912,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.s: 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.i: cmake_force
@@ -506,7 +926,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.s: cma
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.i: cmake_force
@@ -520,7 +940,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_core.c.s
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_num.c.i: cmake_force
@@ -534,7 +954,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_serial_n
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_desc.c.i: cmake_force
@@ -548,7 +968,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd_string_d
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c.i: cmake_force
@@ -561,7 +981,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/class/cdc/acm/app
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building ASM object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.i: cmake_force
@@ -575,7 +995,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/gcc_startup_nrf52840.S.s: 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.i: cmake_force
@@ -589,7 +1009,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.c.s: cmake
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.c.i: cmake_force
@@ -603,7 +1023,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aes.
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init.c.i: cmake_force
@@ -617,7 +1037,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_init
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead.c.i: cmake_force
@@ -631,7 +1051,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_aead
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.i: cmake_force
@@ -645,7 +1065,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shar
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c.i: cmake_force
@@ -659,7 +1079,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c.i: cmake_force
@@ -673,7 +1093,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/nrf_hw/
 Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_crypto_rng.c
 Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj -MF CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj.d -o CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/custom/nrf_crypto_rng.c
 
 Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.i: cmake_force
@@ -687,7 +1107,7 @@ Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.s: cmake_force
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/platform.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/platform.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.i: cmake_force
@@ -701,7 +1121,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform.c.s: cmak
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c.i: cmake_force
@@ -715,7 +1135,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.i: cmake_force
@@ -729,7 +1149,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes_aead.c.i: cmake_force
@@ -743,7 +1163,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/backend/mbedtls
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/aes.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/aes.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.i: cmake_force
@@ -757,7 +1177,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/aes.c.s: cmake_for
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/ccm.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/ccm.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.i: cmake_force
@@ -771,7 +1191,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ccm.c.s: cmake_for
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/gcm.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/gcm.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.i: cmake_force
@@ -785,7 +1205,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/gcm.c.s: cmake_for
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cipher.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cipher.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.i: cmake_force
@@ -799,7 +1219,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher.c.s: cmake_
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.i: cmake_force
@@ -813,7 +1233,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cipher_wrap.c.s: c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cmac.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/cmac.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.i: cmake_force
@@ -827,7 +1247,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/cmac.c.s: cmake_fo
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/platform_util.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/platform_util.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.i: cmake_force
@@ -841,7 +1261,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.s:
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj -MF CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj.d -o CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c
 
 Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.i: cmake_force
@@ -855,7 +1275,7 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/ctr_drbg.c.s: cmak
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj -MF CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj.d -o CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c
 
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/platform_l1_config.c.i: cmake_force
@@ -869,7 +1289,7 @@ Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Sr
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj: Nordic/CMakeFiles/SDK.dir/flags.make
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj: Nordic/CMakeFiles/SDK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj -MF CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj.d -o CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj -c /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c
 
 Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.i: cmake_force
@@ -910,6 +1330,36 @@ SDK_OBJECTS = \
 "CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/soc/nrfx_atomic.c.obj" \
 "CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/queue/nrf_queue.c.obj" \
 "CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj" \
+"CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj" \
+"CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj" \
 "CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj" \
 "CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj" \
 "CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj" \
@@ -972,6 +1422,36 @@ Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/hal/nrf_nvmc.
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/soc/nrfx_atomic.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/queue/nrf_queue.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj
+Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_usbd.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/modules/nrfx/drivers/src/nrfx_systick.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/usbd/app_usbd.c.obj
@@ -1004,7 +1484,7 @@ Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmw
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/build.make
 Nordic/libSDK.a: Nordic/CMakeFiles/SDK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking C static library libSDK.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking C static library libSDK.a"
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && $(CMAKE_COMMAND) -P CMakeFiles/SDK.dir/cmake_clean_target.cmake
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDK.dir/link.txt --verbose=$(VERBOSE)
 

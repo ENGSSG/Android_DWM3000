@@ -29,6 +29,6 @@ Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error.c.obj: 
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h

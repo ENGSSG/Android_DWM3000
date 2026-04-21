@@ -58,6 +58,8 @@ set(CMAKE_EXE_LINKER_FLAGS
 set(CONFIG_QOSAL_IMPL_FREERTOS 1)
 # MAC regions
 set(USE_FIRA 1)
+# BLE side channel
+set(USE_SOFTDEVICE 1)
 set(USE_NIQ 1)
 # Enable PCTT commands on UCI Backend
 set(USE_PCTT 1)
@@ -67,10 +69,10 @@ set(USE_UCI 1)
 set(CONFIG_QM33 1)
 # Disable APPROTECT
 set(CONFIG_SOC_PROTECT 0)
-# Disable RTT logs for performance reasons
-set(CONFIG_LOG OFF)
+# Enable RTT logs for BLE bring-up debugging
+set(CONFIG_LOG ON)
 # 0=NONE 1=ERROR 2=WARNING 3=INFO 4=DEBUG
-set(CONFIG_QLOG_LEVEL 3)
+set(CONFIG_QLOG_LEVEL 4)
 
 add_definitions(-DUCI_BUILD)
 # Enable FTM UCI
@@ -160,6 +162,9 @@ list(APPEND LINK_LIB_LIST "reporter")
 add_subdirectory(${PROJECT_BASE}/Src/Helpers Helpers)
 list(APPEND LINK_LIB_LIST "Helpers")
 
+add_subdirectory(${PROJECT_BASE}/Src/Comm/Src/BLE BLE)
+list(APPEND LINK_LIB_LIST "BLE")
+
 add_subdirectory(${PROJECT_BASE}/Src/Comm Comm)
 list(APPEND LINK_LIB_LIST "Interface")
 
@@ -180,6 +185,9 @@ foreach(lib ${STATIC_LINK_LIB_LIST})
 endforeach(lib in)
 
 target_link_libraries(${EXECUTABLE} -Wl,--no-whole-archive c m nosys)
+
+add_subdirectory(${PROJECT_BASE}/Src/Comm/Src/BLE/nrfx/softdevice SoftDeviceNrfx)
+target_link_libraries(${EXECUTABLE} -Wl,--whole-archive SoftDeviceNrfx -Wl,--no-whole-archive)
 
 add_custom_command(
   TARGET ${PROJECT_NAME}.elf

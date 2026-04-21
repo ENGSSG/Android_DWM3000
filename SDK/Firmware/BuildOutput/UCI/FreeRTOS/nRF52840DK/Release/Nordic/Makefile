@@ -176,6 +176,20 @@ sdk_systick/fast:
 .PHONY : sdk_systick/fast
 
 # Convenience name for target.
+Nordic/CMakeFiles/log_rtt.dir/rule:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nordic/CMakeFiles/log_rtt.dir/rule
+.PHONY : Nordic/CMakeFiles/log_rtt.dir/rule
+
+# Convenience name for target.
+log_rtt: Nordic/CMakeFiles/log_rtt.dir/rule
+.PHONY : log_rtt
+
+# fast build rule for target.
+log_rtt/fast:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/build
+.PHONY : log_rtt/fast
+
+# Convenience name for target.
 Nordic/CMakeFiles/SDK.dir/rule:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nordic/CMakeFiles/SDK.dir/rule
 .PHONY : Nordic/CMakeFiles/SDK.dir/rule
@@ -218,6 +232,7 @@ SDK_17_1_0/components/libraries/atomic/nrf_atomic.obj: SDK_17_1_0/components/lib
 
 # target to build an object file
 SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.obj
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.obj
 .PHONY : SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.obj
 
@@ -226,6 +241,7 @@ SDK_17_1_0/components/libraries/atomic/nrf_atomic.i: SDK_17_1_0/components/libra
 
 # target to preprocess a source file
 SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.i
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.i
 .PHONY : SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.i
 
@@ -234,8 +250,108 @@ SDK_17_1_0/components/libraries/atomic/nrf_atomic.s: SDK_17_1_0/components/libra
 
 # target to generate assembly for a file
 SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.s
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.s
 .PHONY : SDK_17_1_0/components/libraries/atomic/nrf_atomic.c.s
+
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.obj: SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.obj
+
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.i: SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.i
+
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.s: SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s
+.PHONY : SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.c.s
+
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.obj: SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.obj
+
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.i: SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.i
+
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.s: SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s
+.PHONY : SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.c.s
+
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.obj: SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.obj
+
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.i: SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.i
+
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.s: SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s
+.PHONY : SDK_17_1_0/components/libraries/balloc/nrf_balloc.c.s
+
+SDK_17_1_0/components/libraries/button/app_button.obj: SDK_17_1_0/components/libraries/button/app_button.c.obj
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/button/app_button.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.obj
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.c.obj
+
+SDK_17_1_0/components/libraries/button/app_button.i: SDK_17_1_0/components/libraries/button/app_button.c.i
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/button/app_button.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.i
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.c.i
+
+SDK_17_1_0/components/libraries/button/app_button.s: SDK_17_1_0/components/libraries/button/app_button.c.s
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/button/app_button.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/button/app_button.c.s
+.PHONY : SDK_17_1_0/components/libraries/button/app_button.c.s
 
 SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.obj: SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c.obj
 .PHONY : SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.obj
@@ -453,6 +569,54 @@ SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.s
 .PHONY : SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.c.s
 
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.obj: SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.obj
+
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.i: SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.i
+
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.s: SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s
+.PHONY : SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.c.s
+
+SDK_17_1_0/components/libraries/fds/fds.obj: SDK_17_1_0/components/libraries/fds/fds.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/fds/fds.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.c.obj
+
+SDK_17_1_0/components/libraries/fds/fds.i: SDK_17_1_0/components/libraries/fds/fds.c.i
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/fds/fds.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.i
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.c.i
+
+SDK_17_1_0/components/libraries/fds/fds.s: SDK_17_1_0/components/libraries/fds/fds.c.s
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/fds/fds.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fds/fds.c.s
+.PHONY : SDK_17_1_0/components/libraries/fds/fds.c.s
+
 SDK_17_1_0/components/libraries/fifo/app_fifo.obj: SDK_17_1_0/components/libraries/fifo/app_fifo.c.obj
 .PHONY : SDK_17_1_0/components/libraries/fifo/app_fifo.obj
 
@@ -476,6 +640,264 @@ SDK_17_1_0/components/libraries/fifo/app_fifo.s: SDK_17_1_0/components/libraries
 SDK_17_1_0/components/libraries/fifo/app_fifo.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fifo/app_fifo.c.s
 .PHONY : SDK_17_1_0/components/libraries/fifo/app_fifo.c.s
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.obj: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.obj
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.i: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.i
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.s: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.c.s
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.obj: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.obj
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.i: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.i
+
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.s: SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s
+.PHONY : SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.c.s
+
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.obj: SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.obj
+
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.i: SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.i
+
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.s: SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s
+.PHONY : SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.c.s
+
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.obj: SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.obj
+
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.i: SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.i
+
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.s: SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s
+.PHONY : SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c.s
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.obj: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.obj
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.i: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.i
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.s: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.c.s
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.obj: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.obj
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.i: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.i
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.s: SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.c.s
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.obj: SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.obj
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.i: SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.i
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.s: SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.c.s
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.obj: SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.obj
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.i: SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.i
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.s: SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.c.s
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.obj: SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.obj
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.i: SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.i
+
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.s: SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s
+.PHONY : SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.c.s
+
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.obj: SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.obj
+
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.i: SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.i
+
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.s: SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s
+.PHONY : SDK_17_1_0/components/libraries/memobj/nrf_memobj.c.s
 
 SDK_17_1_0/components/libraries/queue/nrf_queue.obj: SDK_17_1_0/components/libraries/queue/nrf_queue.c.obj
 .PHONY : SDK_17_1_0/components/libraries/queue/nrf_queue.obj
@@ -501,6 +923,57 @@ SDK_17_1_0/components/libraries/queue/nrf_queue.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/queue/nrf_queue.c.s
 .PHONY : SDK_17_1_0/components/libraries/queue/nrf_queue.c.s
 
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.obj: SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.obj
+
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.i: SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.i
+
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.s: SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s
+.PHONY : SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.c.s
+
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.obj: SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.obj
+
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.i: SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.i
+
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.s: SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s
+.PHONY : SDK_17_1_0/components/libraries/sensorsim/sensorsim.c.s
+
 SDK_17_1_0/components/libraries/strerror/nrf_strerror.obj: SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.obj
 .PHONY : SDK_17_1_0/components/libraries/strerror/nrf_strerror.obj
 
@@ -524,6 +997,30 @@ SDK_17_1_0/components/libraries/strerror/nrf_strerror.s: SDK_17_1_0/components/l
 SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.s
 .PHONY : SDK_17_1_0/components/libraries/strerror/nrf_strerror.c.s
+
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.obj: SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.obj
+
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.i: SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.i
+
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.s: SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s
+.PHONY : SDK_17_1_0/components/libraries/timer/app_timer_freertos.c.s
 
 SDK_17_1_0/components/libraries/uart/app_uart_fifo.obj: SDK_17_1_0/components/libraries/uart/app_uart_fifo.c.obj
 .PHONY : SDK_17_1_0/components/libraries/uart/app_uart_fifo.obj
@@ -693,6 +1190,30 @@ SDK_17_1_0/components/libraries/util/app_error.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error.c.s
 .PHONY : SDK_17_1_0/components/libraries/util/app_error.c.s
 
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.obj: SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.obj
+
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.i: SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.i
+
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.s: SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s
+.PHONY : SDK_17_1_0/components/libraries/util/app_error_handler_gcc.c.s
+
 SDK_17_1_0/components/libraries/util/app_error_weak.obj: SDK_17_1_0/components/libraries/util/app_error_weak.c.obj
 .PHONY : SDK_17_1_0/components/libraries/util/app_error_weak.obj
 
@@ -740,6 +1261,156 @@ SDK_17_1_0/components/libraries/util/app_util_platform.s: SDK_17_1_0/components/
 SDK_17_1_0/components/libraries/util/app_util_platform.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/app_util_platform.c.s
 .PHONY : SDK_17_1_0/components/libraries/util/app_util_platform.c.s
+
+SDK_17_1_0/components/libraries/util/nrf_assert.obj: SDK_17_1_0/components/libraries/util/nrf_assert.c.obj
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.obj
+
+# target to build an object file
+SDK_17_1_0/components/libraries/util/nrf_assert.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.obj
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.c.obj
+
+SDK_17_1_0/components/libraries/util/nrf_assert.i: SDK_17_1_0/components/libraries/util/nrf_assert.c.i
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/libraries/util/nrf_assert.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.i
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.c.i
+
+SDK_17_1_0/components/libraries/util/nrf_assert.s: SDK_17_1_0/components/libraries/util/nrf_assert.c.s
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/libraries/util/nrf_assert.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/libraries/util/nrf_assert.c.s
+.PHONY : SDK_17_1_0/components/libraries/util/nrf_assert.c.s
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh.obj: SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.obj
+
+# target to build an object file
+SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.c.obj
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh.i: SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.c.i
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh.s: SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh.c.s
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.obj: SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.obj
+
+# target to build an object file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.obj
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.i: SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.i
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.s: SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.c.s
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.obj: SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.obj
+
+# target to build an object file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.obj
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.i: SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.i
+
+# target to preprocess a source file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.i
+
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.s: SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.s
+
+# target to generate assembly for a file
+SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s
+.PHONY : SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c.s
+
+SDK_17_1_0/external/fprintf/nrf_fprintf.obj: SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.obj
+
+# target to build an object file
+SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.c.obj
+
+SDK_17_1_0/external/fprintf/nrf_fprintf.i: SDK_17_1_0/external/fprintf/nrf_fprintf.c.i
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/fprintf/nrf_fprintf.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.i
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.c.i
+
+SDK_17_1_0/external/fprintf/nrf_fprintf.s: SDK_17_1_0/external/fprintf/nrf_fprintf.c.s
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/fprintf/nrf_fprintf.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf.c.s
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf.c.s
+
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.obj: SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.obj
+
+# target to build an object file
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.obj
+
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.i: SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.i
+
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.s: SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s
+.PHONY : SDK_17_1_0/external/fprintf/nrf_fprintf_format.c.s
 
 SDK_17_1_0/external/mbedtls/library/aes.obj: SDK_17_1_0/external/mbedtls/library/aes.c.obj
 .PHONY : SDK_17_1_0/external/mbedtls/library/aes.obj
@@ -956,6 +1627,108 @@ SDK_17_1_0/external/mbedtls/library/platform_util.s: SDK_17_1_0/external/mbedtls
 SDK_17_1_0/external/mbedtls/library/platform_util.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/mbedtls/library/platform_util.c.s
 .PHONY : SDK_17_1_0/external/mbedtls/library/platform_util.c.s
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.obj: SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.obj
+
+# target to build an object file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.obj
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.i: SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.i
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.s: SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT.c.s
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.obj: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.obj
+
+# target to build an object file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.obj
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.i: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.i
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.s: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c.s
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.obj: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.obj
+
+# target to build an object file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.obj
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.i: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.i
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.s: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c.s
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.obj: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.obj
+
+# target to build an object file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.obj
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.i: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.i
+
+# target to preprocess a source file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.i
+
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.s: SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.s
+
+# target to generate assembly for a file
+SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s
+.PHONY : SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.c.s
 
 SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.obj: SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.c.obj
 .PHONY : SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.obj
@@ -1520,6 +2293,30 @@ custom/nrf_crypto_rng.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/custom/nrf_crypto_rng.c.s
 .PHONY : custom/nrf_crypto_rng.c.s
 
+custom/nrf_sdh_soc.obj: custom/nrf_sdh_soc.c.obj
+.PHONY : custom/nrf_sdh_soc.obj
+
+# target to build an object file
+custom/nrf_sdh_soc.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.obj
+.PHONY : custom/nrf_sdh_soc.c.obj
+
+custom/nrf_sdh_soc.i: custom/nrf_sdh_soc.c.i
+.PHONY : custom/nrf_sdh_soc.i
+
+# target to preprocess a source file
+custom/nrf_sdh_soc.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.i
+.PHONY : custom/nrf_sdh_soc.c.i
+
+custom/nrf_sdh_soc.s: custom/nrf_sdh_soc.c.s
+.PHONY : custom/nrf_sdh_soc.s
+
+# target to generate assembly for a file
+custom/nrf_sdh_soc.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/SDK.dir/build.make Nordic/CMakeFiles/SDK.dir/custom/nrf_sdh_soc.c.s
+.PHONY : custom/nrf_sdh_soc.c.s
+
 home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.obj: home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c.obj
 .PHONY : home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.obj
 
@@ -1581,6 +2378,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... SDK"
+	@echo "... log_rtt"
 	@echo "... sdk_systick"
 	@echo "... SDK_17_1_0/components/boards/boards.obj"
 	@echo "... SDK_17_1_0/components/boards/boards.i"
@@ -1588,6 +2386,18 @@ help:
 	@echo "... SDK_17_1_0/components/libraries/atomic/nrf_atomic.obj"
 	@echo "... SDK_17_1_0/components/libraries/atomic/nrf_atomic.i"
 	@echo "... SDK_17_1_0/components/libraries/atomic/nrf_atomic.s"
+	@echo "... SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.obj"
+	@echo "... SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.i"
+	@echo "... SDK_17_1_0/components/libraries/atomic_fifo/nrf_atfifo.s"
+	@echo "... SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.obj"
+	@echo "... SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.i"
+	@echo "... SDK_17_1_0/components/libraries/atomic_flags/nrf_atflags.s"
+	@echo "... SDK_17_1_0/components/libraries/balloc/nrf_balloc.obj"
+	@echo "... SDK_17_1_0/components/libraries/balloc/nrf_balloc.i"
+	@echo "... SDK_17_1_0/components/libraries/balloc/nrf_balloc.s"
+	@echo "... SDK_17_1_0/components/libraries/button/app_button.obj"
+	@echo "... SDK_17_1_0/components/libraries/button/app_button.i"
+	@echo "... SDK_17_1_0/components/libraries/button/app_button.s"
 	@echo "... SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.obj"
 	@echo "... SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.i"
 	@echo "... SDK_17_1_0/components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.s"
@@ -1615,15 +2425,60 @@ help:
 	@echo "... SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.obj"
 	@echo "... SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.i"
 	@echo "... SDK_17_1_0/components/libraries/crypto/nrf_crypto_shared.s"
+	@echo "... SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.obj"
+	@echo "... SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.i"
+	@echo "... SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section_iter.s"
+	@echo "... SDK_17_1_0/components/libraries/fds/fds.obj"
+	@echo "... SDK_17_1_0/components/libraries/fds/fds.i"
+	@echo "... SDK_17_1_0/components/libraries/fds/fds.s"
 	@echo "... SDK_17_1_0/components/libraries/fifo/app_fifo.obj"
 	@echo "... SDK_17_1_0/components/libraries/fifo/app_fifo.i"
 	@echo "... SDK_17_1_0/components/libraries/fifo/app_fifo.s"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.obj"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.i"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage.s"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.obj"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.i"
+	@echo "... SDK_17_1_0/components/libraries/fstorage/nrf_fstorage_sd.s"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.obj"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.i"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/hardfault_implementation.s"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.obj"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.i"
+	@echo "... SDK_17_1_0/components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.s"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.obj"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.i"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_rtt.s"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.obj"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.i"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_backend_serial.s"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.obj"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.i"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_default_backends.s"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.obj"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.i"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_frontend.s"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.obj"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.i"
+	@echo "... SDK_17_1_0/components/libraries/log/src/nrf_log_str_formatter.s"
+	@echo "... SDK_17_1_0/components/libraries/memobj/nrf_memobj.obj"
+	@echo "... SDK_17_1_0/components/libraries/memobj/nrf_memobj.i"
+	@echo "... SDK_17_1_0/components/libraries/memobj/nrf_memobj.s"
 	@echo "... SDK_17_1_0/components/libraries/queue/nrf_queue.obj"
 	@echo "... SDK_17_1_0/components/libraries/queue/nrf_queue.i"
 	@echo "... SDK_17_1_0/components/libraries/queue/nrf_queue.s"
+	@echo "... SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.obj"
+	@echo "... SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.i"
+	@echo "... SDK_17_1_0/components/libraries/ringbuf/nrf_ringbuf.s"
+	@echo "... SDK_17_1_0/components/libraries/sensorsim/sensorsim.obj"
+	@echo "... SDK_17_1_0/components/libraries/sensorsim/sensorsim.i"
+	@echo "... SDK_17_1_0/components/libraries/sensorsim/sensorsim.s"
 	@echo "... SDK_17_1_0/components/libraries/strerror/nrf_strerror.obj"
 	@echo "... SDK_17_1_0/components/libraries/strerror/nrf_strerror.i"
 	@echo "... SDK_17_1_0/components/libraries/strerror/nrf_strerror.s"
+	@echo "... SDK_17_1_0/components/libraries/timer/app_timer_freertos.obj"
+	@echo "... SDK_17_1_0/components/libraries/timer/app_timer_freertos.i"
+	@echo "... SDK_17_1_0/components/libraries/timer/app_timer_freertos.s"
 	@echo "... SDK_17_1_0/components/libraries/uart/app_uart_fifo.obj"
 	@echo "... SDK_17_1_0/components/libraries/uart/app_uart_fifo.i"
 	@echo "... SDK_17_1_0/components/libraries/uart/app_uart_fifo.s"
@@ -1645,12 +2500,33 @@ help:
 	@echo "... SDK_17_1_0/components/libraries/util/app_error.obj"
 	@echo "... SDK_17_1_0/components/libraries/util/app_error.i"
 	@echo "... SDK_17_1_0/components/libraries/util/app_error.s"
+	@echo "... SDK_17_1_0/components/libraries/util/app_error_handler_gcc.obj"
+	@echo "... SDK_17_1_0/components/libraries/util/app_error_handler_gcc.i"
+	@echo "... SDK_17_1_0/components/libraries/util/app_error_handler_gcc.s"
 	@echo "... SDK_17_1_0/components/libraries/util/app_error_weak.obj"
 	@echo "... SDK_17_1_0/components/libraries/util/app_error_weak.i"
 	@echo "... SDK_17_1_0/components/libraries/util/app_error_weak.s"
 	@echo "... SDK_17_1_0/components/libraries/util/app_util_platform.obj"
 	@echo "... SDK_17_1_0/components/libraries/util/app_util_platform.i"
 	@echo "... SDK_17_1_0/components/libraries/util/app_util_platform.s"
+	@echo "... SDK_17_1_0/components/libraries/util/nrf_assert.obj"
+	@echo "... SDK_17_1_0/components/libraries/util/nrf_assert.i"
+	@echo "... SDK_17_1_0/components/libraries/util/nrf_assert.s"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh.obj"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh.i"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh.s"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.obj"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.i"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_ble.s"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.obj"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.i"
+	@echo "... SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.s"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf.obj"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf.i"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf.s"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf_format.obj"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf_format.i"
+	@echo "... SDK_17_1_0/external/fprintf/nrf_fprintf_format.s"
 	@echo "... SDK_17_1_0/external/mbedtls/library/aes.obj"
 	@echo "... SDK_17_1_0/external/mbedtls/library/aes.i"
 	@echo "... SDK_17_1_0/external/mbedtls/library/aes.s"
@@ -1678,6 +2554,18 @@ help:
 	@echo "... SDK_17_1_0/external/mbedtls/library/platform_util.obj"
 	@echo "... SDK_17_1_0/external/mbedtls/library/platform_util.i"
 	@echo "... SDK_17_1_0/external/mbedtls/library/platform_util.s"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT.obj"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT.i"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT.s"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.obj"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.i"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_GCC.s"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.obj"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.i"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Syscalls_SES.s"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.obj"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.i"
+	@echo "... SDK_17_1_0/external/segger_rtt/SEGGER_RTT_printf.s"
 	@echo "... SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.obj"
 	@echo "... SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.i"
 	@echo "... SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.s"
@@ -1748,6 +2636,9 @@ help:
 	@echo "... custom/nrf_crypto_rng.obj"
 	@echo "... custom/nrf_crypto_rng.i"
 	@echo "... custom/nrf_crypto_rng.s"
+	@echo "... custom/nrf_sdh_soc.obj"
+	@echo "... custom/nrf_sdh_soc.i"
+	@echo "... custom/nrf_sdh_soc.s"
 	@echo "... home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.obj"
 	@echo "... home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.i"
 	@echo "... home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.s"

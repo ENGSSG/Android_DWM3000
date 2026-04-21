@@ -50,15 +50,20 @@ flash_page_min_align = 4096;
 
 MEMORY
 {
-RAM (rwx)      : ORIGIN = 0x20000000, LENGTH = 256K
+    RAM (rwx)      : ORIGIN = 0x20002700, LENGTH = 0x3D900 /* 0x20000000 to 0x3D8FF RAM section is dedicated to SoftDevice */
     FLASH (rx)     : ORIGIN = 0x00000000, LENGTH = 1M - 4K - 4K /* 1M minus calib_sha/calib sections. */
-CALIB_SHA (rw) : ORIGIN = 0x000FE000, LENGTH = 4K
-CALIB (rw)    : ORIGIN = 0x000FF000, LENGTH = 4K
+    CALIB_SHA (rw) : ORIGIN = 0x0007B000, LENGTH = 4K
+    CALIB (rw)     : ORIGIN = 0x0007C000, LENGTH = 4K
 }
 
 SECTIONS
 {
-    .application (0x00000000) :
+    .soft_device (0x00000000) :
+    {
+        KEEP(*(.soft_device_prog))
+    } > FLASH
+
+    .application (0x1c000) :
     {
         . = ALIGN(4);
         KEEP(*(.isr_vector)) /* Startup code */
@@ -128,14 +133,14 @@ SECTIONS
         PROVIDE(__stop_log_backends = .);
     } > FLASH
 
-  .nrf_sections :
+    .nrf_sections :
     {
         PROVIDE(__start_nrf_sections = .);
         KEEP(*(SORT(.nrf_sections*)))
         PROVIDE(__stop_nrf_sections = .);
     } > FLASH
 
-  .cli_sorted_cmd_ptrs :
+    .cli_sorted_cmd_ptrs :
     {
         PROVIDE(__start_cli_sorted_cmd_ptrs = .);
         KEEP(*(SORT(.cli_sorted_cmd_ptrs*)))
@@ -230,27 +235,22 @@ SECTIONS
     .l1_config_persist_storage_sha256 (NOLOAD):
     {
         ASSERT(CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SHA256_SIZE != 0, "UWB_L1_CONFIG_SHA256_SIZE can't be 0. Normally 32 bytes.");
-       	__l1_config_persist_storage_sha256_start = .;
-       	KEEP(*(.l1_config_persist_storage_sha256))
-       	. =  __l1_config_persist_storage_sha256_start + CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SHA256_SIZE;
-       	__l1_config_persist_storage_sha256_end = .;
+        __l1_config_persist_storage_sha256_start = .;
+        KEEP(*(.l1_config_persist_storage_sha256))
+        . =  __l1_config_persist_storage_sha256_start + CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SHA256_SIZE;
+        __l1_config_persist_storage_sha256_end = .;
     } > CALIB_SHA
 
     /* set calibration at the last 4K page. */
     .l1_config_persist_storage (NOLOAD):
     {
         ASSERT(CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SIZE != 0, "UWB_L1_CONFIG_SIZE can't be 0. Normally Page size value");
-       	__l1_config_persist_storage_start = .;
-       	KEEP(*(.l1_config_persist_storage))
-       	. =  __l1_config_persist_storage_start + CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SIZE;
-       	__l1_config_persist_storage_end = .;
+        __l1_config_persist_storage_start = .;
+        KEEP(*(.l1_config_persist_storage))
+        . =  __l1_config_persist_storage_start + CONFIG_SECURE_PARTITIONS_UWB_L1_CONFIG_SIZE;
+        __l1_config_persist_storage_end = .;
 
     } > CALIB
-
-    .sd_ram (NOLOAD): AT(ORIGIN(RAM))
-    {
-        KEEP(*(.soft_device_bss))
-    }
 
     .data : AT (__etext)
     {

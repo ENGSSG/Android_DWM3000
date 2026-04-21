@@ -214,6 +214,19 @@ sdk_systick/fast:
 .PHONY : sdk_systick/fast
 
 #=============================================================================
+# Target rules for targets named log_rtt
+
+# Build rule for target.
+log_rtt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 log_rtt
+.PHONY : log_rtt
+
+# fast build rule for target.
+log_rtt/fast:
+	$(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/build
+.PHONY : log_rtt/fast
+
+#=============================================================================
 # Target rules for targets named SDK
 
 # Build rule for target.
@@ -344,6 +357,19 @@ qplatform_deca_compat/fast:
 .PHONY : qplatform_deca_compat/fast
 
 #=============================================================================
+# Target rules for targets named logger
+
+# Build rule for target.
+logger: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger
+.PHONY : logger
+
+# fast build rule for target.
+logger/fast:
+	$(MAKE) $(MAKESILENT) -f logger/CMakeFiles/logger.dir/build.make logger/CMakeFiles/logger.dir/build
+.PHONY : logger/fast
+
+#=============================================================================
 # Target rules for targets named Config
 
 # Build rule for target.
@@ -435,6 +461,19 @@ Helpers/fast:
 .PHONY : Helpers/fast
 
 #=============================================================================
+# Target rules for targets named BLE
+
+# Build rule for target.
+BLE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BLE
+.PHONY : BLE
+
+# fast build rule for target.
+BLE/fast:
+	$(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/build
+.PHONY : BLE/fast
+
+#=============================================================================
 # Target rules for targets named Interface
 
 # Build rule for target.
@@ -459,6 +498,19 @@ uci: cmake_check_build_system
 uci/fast:
 	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/build
 .PHONY : uci/fast
+
+#=============================================================================
+# Target rules for targets named SoftDeviceNrfx
+
+# Build rule for target.
+SoftDeviceNrfx: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SoftDeviceNrfx
+.PHONY : SoftDeviceNrfx
+
+# fast build rule for target.
+SoftDeviceNrfx/fast:
+	$(MAKE) $(MAKESILENT) -f SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/build.make SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/build
+.PHONY : SoftDeviceNrfx/fast
 
 home/engssg/Android_DWM3000/SDK/Firmware/Libs/dwt_uwb_driver/deca_compat.obj: home/engssg/Android_DWM3000/SDK/Firmware/Libs/dwt_uwb_driver/deca_compat.c.obj
 .PHONY : home/engssg/Android_DWM3000/SDK/Firmware/Libs/dwt_uwb_driver/deca_compat.obj
@@ -688,6 +740,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... BLE"
 	@echo "... Board"
 	@echo "... Config"
 	@echo "... EventManager"
@@ -697,9 +750,12 @@ help:
 	@echo "... OS"
 	@echo "... ProjectDefinition"
 	@echo "... SDK"
+	@echo "... SoftDeviceNrfx"
 	@echo "... UWB"
 	@echo "... app_common"
 	@echo "... fira"
+	@echo "... log_rtt"
+	@echo "... logger"
 	@echo "... nRF52840DK-UCI-FreeRTOS.elf"
 	@echo "... platform_l1"
 	@echo "... qhal"

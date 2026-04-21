@@ -23,10 +23,17 @@
 #include "qlog.h"
 #include "int_priority.h"
 #include "deca_error.h"
+#include "SEGGER_RTT.h"
 
 #define LOG_FLUSH_MS (5)
 
 #if defined(CONFIG_LOG) && defined(NRF_LOG_ENABLED)
+
+static void rtt_trace(const char *msg)
+{
+    SEGGER_RTT_WriteString(0, msg);
+    SEGGER_RTT_WriteString(0, "\r\n");
+}
 
 static struct qthread *log_thread;        /* qthread handler. */
 static uint8_t *log_task_stack;           /* Pointer to Task stack. */
@@ -41,10 +48,13 @@ static uint32_t get_timestamp(void)
 
 static void init_log(void)
 {
+    rtt_trace("log: init_log begin");
     ret_code_t err_code = NRF_LOG_INIT(get_timestamp);
+    rtt_trace("log: NRF_LOG_INIT returned");
     APP_ERROR_CHECK(err_code);
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
+    rtt_trace("log: default backends init done");
 }
 
 static void log_processing_task(void *pvParameters)
@@ -69,10 +79,13 @@ void log_pending_hook(void)
 
 void create_log_processing_task(void)
 {
+    rtt_trace("log: create task begin");
     init_log();
+    rtt_trace("log: init_log done");
 
     /* Initialize Log signal */
     log_signal = qsignal_init();
+    rtt_trace(log_signal ? "log: qsignal_init ok" : "log: qsignal_init failed");
     if (!log_signal)
     {
         return;
@@ -80,9 +93,11 @@ void create_log_processing_task(void)
 
     size_t task_size = 768;
     log_task_stack = qmalloc(task_size);
+    rtt_trace(log_task_stack ? "log: qmalloc ok" : "log: qmalloc failed");
 
     /* Create the task, storing the handle. */
     log_thread = qthread_create(log_processing_task, NULL, "Logger", log_task_stack, task_size, PRIO_LogProcessingTask);
+    rtt_trace(log_thread ? "log: qthread_create ok" : "log: qthread_create failed");
     if (!log_thread)
     {
         qfree(log_task_stack);

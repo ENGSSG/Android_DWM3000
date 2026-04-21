@@ -223,13 +223,6 @@ if(CONFIG_LOG)
            NRF_LOG_DEFERRED=1
   )
 
-  # <0=> Default <1=> Black <2=> Red <3=> Green <4=> Yellow <5=> Blue <6=> Magenta <7=> Cyan <8=>
-  # White
-  target_compile_definitions(
-    ProjectDefinition PUBLIC NRF_LOG_COLOR_DEFAULT=0 NRF_LOG_INFO_COLOR=3 NRF_LOG_WARNING_COLOR=4
-                             NRF_LOG_ERROR_COLOR=2
-  )
-
   if(CONFIG_QLOG_LEVEL)
     target_compile_definitions(ProjectDefinition PUBLIC CONFIG_QLOG_LEVEL=${CONFIG_QLOG_LEVEL})
   else()

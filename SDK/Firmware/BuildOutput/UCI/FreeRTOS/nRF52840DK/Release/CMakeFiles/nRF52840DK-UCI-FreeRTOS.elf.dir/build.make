@@ -144,16 +144,21 @@ nRF52840DK-UCI-FreeRTOS.elf: nRF52840DK/libBoard.a
 nRF52840DK-UCI-FreeRTOS.elf: HAL/libHAL.a
 nRF52840DK-UCI-FreeRTOS.elf: qhal/libqhal.a
 nRF52840DK-UCI-FreeRTOS.elf: qplatform/libqplatform.a
+nRF52840DK-UCI-FreeRTOS.elf: logger/liblogger.a
 nRF52840DK-UCI-FreeRTOS.elf: OSAL/qosal/libqosal.a
 nRF52840DK-UCI-FreeRTOS.elf: AppCommon/libapp_common.a
 nRF52840DK-UCI-FreeRTOS.elf: UWB/libUWB.a
 nRF52840DK-UCI-FreeRTOS.elf: AppFira/libfira.a
 nRF52840DK-UCI-FreeRTOS.elf: reporter/libreporter.a
 nRF52840DK-UCI-FreeRTOS.elf: Helpers/libHelpers.a
+nRF52840DK-UCI-FreeRTOS.elf: BLE/libBLE.a
 nRF52840DK-UCI-FreeRTOS.elf: Comm/libInterface.a
 nRF52840DK-UCI-FreeRTOS.elf: uci/libuci.a
 nRF52840DK-UCI-FreeRTOS.elf: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/lib/arm-cortex-m4-hard_floating/uwbstack_bundle/libuwbstack_bundle_full_arm-cortex-m4-hard_floating_rtos_R12.7.0-00405-gb33c5c42726c.a
 nRF52840DK-UCI-FreeRTOS.elf: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/lib/arm-cortex-m4-hard_floating/uci_bundle/libuci_bundle_full_arm-cortex-m4-hard_floating_rtos_R12.7.0-00405-gb33c5c42726c.a
+nRF52840DK-UCI-FreeRTOS.elf: SoftDeviceNrfx/libSoftDeviceNrfx.a
+nRF52840DK-UCI-FreeRTOS.elf: AppFira/libfira.a
+nRF52840DK-UCI-FreeRTOS.elf: /home/engssg/Android_DWM3000/SDK/Firmware/Projects/Common/cmakefiles/../../../Libs/niq/libniq-m4-hfp-2.1.0.0.a
 nRF52840DK-UCI-FreeRTOS.elf: nRF52840DK/libBoard.a
 nRF52840DK-UCI-FreeRTOS.elf: HAL/libHAL.a
 nRF52840DK-UCI-FreeRTOS.elf: qhal/libqhal.a
@@ -186,6 +191,7 @@ nRF52840DK-UCI-FreeRTOS.elf: AppConfig/libConfig.a
 nRF52840DK-UCI-FreeRTOS.elf: libuwbdriver.a
 nRF52840DK-UCI-FreeRTOS.elf: Comm/libInterface.a
 nRF52840DK-UCI-FreeRTOS.elf: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/lib/arm-cortex-m4-hard_floating/uwbstack_bundle/libuwbstack_bundle_full_arm-cortex-m4-hard_floating_rtos_R12.7.0-00405-gb33c5c42726c.a
+nRF52840DK-UCI-FreeRTOS.elf: Nordic/liblog_rtt.a
 nRF52840DK-UCI-FreeRTOS.elf: ProjectDefinition/libProjectDefinition.a
 nRF52840DK-UCI-FreeRTOS.elf: CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable nRF52840DK-UCI-FreeRTOS.elf"

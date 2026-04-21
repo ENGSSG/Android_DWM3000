@@ -60,7 +60,7 @@ endif()
 add_library(qosal STATIC IMPORTED)
 
 set_target_properties(qosal PROPERTIES
-  INTERFACE_LINK_LIBRARIES "qosal_itf;qhal"
+  INTERFACE_LINK_LIBRARIES "qosal_itf;qhal;log_rtt"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
@@ -102,7 +102,7 @@ unset(_cmake_import_check_targets)
 # Make sure the targets which have been exported in some other
 # export set exist.
 unset(${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE_targets)
-foreach(_target "qosal_itf" "qhal" )
+foreach(_target "qosal_itf" "qhal" "log_rtt" )
   if(NOT TARGET "${_target}" )
     set(${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE_targets "${${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE_targets} ${_target}")
   endif()

@@ -4,7 +4,6 @@
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qerr.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qerr.c \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
@@ -12,11 +11,24 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qerr.c.obj: /home/engssg/Android_DW
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
@@ -24,13 +36,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qerr.c.obj: /home/engssg/Android_DW
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -56,32 +61,39 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qerr.c.obj: /home/engssg/Android_DW
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qirq.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qirq.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qirq.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -89,6 +101,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qirq.c.obj: /home/engssg/Android_DW
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -98,6 +117,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qirq.c.obj: /home/engssg/Android_DW
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/nano/newlib.h \
   /usr/include/newlib/stdio.h \
+  /usr/include/newlib/string.h \
   /usr/include/newlib/sys/_pthreadtypes.h \
   /usr/include/newlib/sys/_stdint.h \
   /usr/include/newlib/sys/_types.h \
@@ -107,6 +127,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qirq.c.obj: /home/engssg/Android_DW
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
   /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/sys/string.h \
   /usr/include/newlib/sys/types.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
@@ -118,7 +139,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmalloc.c.obj: /home/engssg/Android
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qassert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmalloc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
@@ -126,11 +146,24 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmalloc.c.obj: /home/engssg/Android
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
@@ -138,13 +171,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmalloc.c.obj: /home/engssg/Android
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -172,6 +198,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmalloc.c.obj: /home/engssg/Android
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmsg_queue.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qmsg_queue.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
@@ -183,28 +210,34 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmsg_queue.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -213,6 +246,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmsg_queue.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -240,6 +280,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmsg_queue.c.obj: /home/engssg/Andr
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmutex.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qmutex.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
@@ -251,28 +292,34 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmutex.c.obj: /home/engssg/Android_
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
@@ -280,6 +327,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qmutex.c.obj: /home/engssg/Android_
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/semphr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -310,7 +364,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qos.c.obj: /home/engssg/Android_DWM
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qos.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
@@ -318,20 +371,19 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qos.c.obj: /home/engssg/Android_DWM
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -339,6 +391,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qos.c.obj: /home/engssg/Android_DWM
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -371,31 +430,38 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qpm.c.obj: /home/engssg/Android_DWM
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprivate.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qirq.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -403,6 +469,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprivate.c.obj: /home/engssg/Androi
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -412,6 +485,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprivate.c.obj: /home/engssg/Androi
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/nano/newlib.h \
   /usr/include/newlib/stdio.h \
+  /usr/include/newlib/string.h \
   /usr/include/newlib/sys/_pthreadtypes.h \
   /usr/include/newlib/sys/_stdint.h \
   /usr/include/newlib/sys/_types.h \
@@ -421,6 +495,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprivate.c.obj: /home/engssg/Androi
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
   /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/sys/string.h \
   /usr/include/newlib/sys/types.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
@@ -428,34 +503,41 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprivate.c.obj: /home/engssg/Androi
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprofiling.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprofiling.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qassert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmalloc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qprofiling.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -463,6 +545,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qprofiling.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -494,6 +583,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qrand.c.obj: /home/engssg/Android_D
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qsemaphore.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qsemaphore.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
@@ -505,28 +595,34 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qsemaphore.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
@@ -534,6 +630,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qsemaphore.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/semphr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -587,6 +690,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qsignal.c.obj: /home/engssg/Android
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qthread.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qthread.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
@@ -597,28 +701,34 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qthread.c.obj: /home/engssg/Android
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
@@ -626,6 +736,13 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qthread.c.obj: /home/engssg/Android
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -657,7 +774,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtime.c.obj: /home/engssg/Android_D
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
@@ -666,11 +782,27 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtime.c.obj: /home/engssg/Android_D
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_resources.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_sd_def.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/legacy/apply_old_config.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_config.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_glue.h \
@@ -692,15 +824,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtime.c.obj: /home/engssg/Android_D
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_coredep.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -726,17 +849,32 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtime.c.obj: /home/engssg/Android_D
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtracing.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qtracing.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtracing.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
@@ -758,6 +896,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtracing.c.obj: /home/engssg/Androi
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/nano/newlib.h \
   /usr/include/newlib/stdio.h \
+  /usr/include/newlib/string.h \
   /usr/include/newlib/sys/_pthreadtypes.h \
   /usr/include/newlib/sys/_stdint.h \
   /usr/include/newlib/sys/_types.h \
@@ -767,6 +906,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtracing.c.obj: /home/engssg/Androi
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
   /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/sys/string.h \
   /usr/include/newlib/sys/types.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
@@ -774,6 +914,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qtracing.c.obj: /home/engssg/Androi
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qworkqueue.c.obj: /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qworkqueue.c \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
@@ -785,19 +926,40 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qworkqueue.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qworkqueue.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error_weak.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_gcc.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
@@ -805,14 +967,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/freertos/qworkqueue.c.obj: /home/engssg/Andr
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/system_nrf52840.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/deprecated_definitions.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h \
-  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/assert.h \
@@ -867,8 +1021,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/qmalloc.c:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qworkqueue.h:
-
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtracing.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qworkqueue.c:
@@ -885,25 +1037,35 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_peripherals.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_systick.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_common.h:
 
-/usr/include/newlib/sys/lock.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/include/nrfx_systick.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_config.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_sd_def.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsignal.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qthread.c:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs_nrf52840.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsemaphore.h:
+
+/usr/include/newlib/sys/_pthreadtypes.h:
+
+/usr/include/newlib/machine/_types.h:
 
 /usr/include/newlib/machine/ieeefp.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/CMSIS/nrf52/portmacro_cmsis.h:
 
+/usr/include/newlib/sys/lock.h:
+
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qassert.h:
-
-/usr/include/newlib/sys/cdefs.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h:
-
-/usr/include/newlib/sys/_stdint.h:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
-
-/usr/include/newlib/machine/_types.h:
 
 /usr/include/newlib/machine/_default_types.h:
 
@@ -911,71 +1073,85 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 
 /usr/include/newlib/_newlib_version.h:
 
-/usr/include/newlib/sys/config.h:
+/usr/include/newlib/stdio.h:
 
-/usr/include/newlib/_ansi.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_systick.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_svc.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/qerr_common.c:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_glue.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h:
 
-/usr/include/newlib/nano/newlib.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/GCC/nrf52/portmacro.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/nrfx/qlog_impl.h:
 
 /usr/include/newlib/assert.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h:
 
-/usr/include/newlib/stdio.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmsg_queue.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h:
-
-/usr/include/newlib/sys/features.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qerr.c:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qmutex.c:
 
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nrf_assert.h:
+
 /usr/include/newlib/machine/types.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/FreeRTOS.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/portable/ARM/nrf52/portmacro.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/portable.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52840_bitfields.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util_platform.h:
+/usr/include/newlib/sys/_stdint.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qerr.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qsignal.c:
+/usr/include/newlib/nano/newlib.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h:
 
 /usr/include/newlib/sys/_types.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/projdefs.h:
+/usr/include/newlib/sys/cdefs.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/task.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h:
+/usr/include/newlib/_ansi.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmsg_queue.h:
+/usr/include/newlib/sys/config.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qerr.c:
+
+/usr/include/newlib/sys/features.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qtime.c:
 
@@ -984,8 +1160,6 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 /usr/include/newlib/sys/reent.h:
 
 /usr/include/newlib/sys/stdio.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_config.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qsemaphore.c:
 
@@ -1017,21 +1191,25 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprivate.h:
 
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h:
+
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qrand.c:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_errors.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_common.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmalloc.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/include/nrfx_systick.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_resources.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qworkqueue.h:
 
-/usr/include/newlib/string.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_instance.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/semphr.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/src/nrf_log_internal.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf_peripherals.h:
 
@@ -1039,9 +1217,35 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h:
 
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qsignal.c:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_errors.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_macros.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_os.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/list.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/sdk_resources.h:
+
+/usr/include/newlib/string.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/semphr.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_error_soc.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qassert_impl.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmalloc.h:
+
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/queue.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf52/nrf_mbr.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmutex.h:
 
@@ -1064,25 +1268,3 @@ OSAL/qosal/CMakeFiles/qosal.dir/src/qmalloc.c.obj: /home/engssg/Android_DWM3000/
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qprofiling.c:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qrand.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/soc/nrfx_irqs_nrf52840.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsemaphore.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/freertos/qthread.c:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_common.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsignal.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/nrfx_errors.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/src/qerr_common.c:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/freertos/source/include/mpu_wrappers.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/nrfx_glue.h:

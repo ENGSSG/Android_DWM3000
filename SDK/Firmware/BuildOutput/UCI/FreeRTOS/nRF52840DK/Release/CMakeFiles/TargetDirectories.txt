@@ -14,6 +14,7 @@
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/ProjectDefinition/CMakeFiles/install/local.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/ProjectDefinition/CMakeFiles/install/strip.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic/CMakeFiles/sdk_systick.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic/CMakeFiles/log_rtt.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic/CMakeFiles/SDK.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic/CMakeFiles/edit_cache.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Nordic/CMakeFiles/rebuild_cache.dir
@@ -78,6 +79,13 @@
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/qplatform/CMakeFiles/install.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/qplatform/CMakeFiles/install/local.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/qplatform/CMakeFiles/install/strip.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/logger.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/edit_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/rebuild_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/list_install_components.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/install.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/install/local.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/logger/CMakeFiles/install/strip.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/AppConfig/CMakeFiles/Config.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/AppConfig/CMakeFiles/edit_cache.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/AppConfig/CMakeFiles/rebuild_cache.dir
@@ -127,6 +135,13 @@
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Helpers/CMakeFiles/install.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Helpers/CMakeFiles/install/local.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Helpers/CMakeFiles/install/strip.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/BLE.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/edit_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/rebuild_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/list_install_components.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/install.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/install/local.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/BLE/CMakeFiles/install/strip.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Comm/CMakeFiles/Interface.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Comm/CMakeFiles/edit_cache.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/Comm/CMakeFiles/rebuild_cache.dir
@@ -141,3 +156,10 @@
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/uci/CMakeFiles/install.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/uci/CMakeFiles/install/local.dir
 /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/uci/CMakeFiles/install/strip.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/edit_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/rebuild_cache.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/list_install_components.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/install.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/install/local.dir
+/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/SoftDeviceNrfx/CMakeFiles/install/strip.dir
