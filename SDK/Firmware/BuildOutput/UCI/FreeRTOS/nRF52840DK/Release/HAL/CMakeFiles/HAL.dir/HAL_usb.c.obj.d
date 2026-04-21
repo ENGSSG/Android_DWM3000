@@ -106,4 +106,6 @@ HAL/CMakeFiles/HAL.dir/HAL_usb.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/integration/nrfx/legacy/nrf_drv_clock.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/include/nrfx_clock.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_clock.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/include/nrfx_power_clock.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/drivers/include/nrfx_power_clock.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h

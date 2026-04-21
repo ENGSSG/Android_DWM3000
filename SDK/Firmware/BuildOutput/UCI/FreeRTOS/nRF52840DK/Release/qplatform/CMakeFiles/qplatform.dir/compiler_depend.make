@@ -46,6 +46,8 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_common/src/qplatform.c.obj: /home/e
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
@@ -193,6 +195,8 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_non_zephyr/src/qplatform.c.obj: /ho
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h:
 
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h:
+
 /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/sdk_config.h:
 
 /usr/include/newlib/sys/types.h:
@@ -206,8 +210,6 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_non_zephyr/src/qplatform.c.obj: /ho
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_error.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qplatform/include/qplatform.h:
-
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf52_to_nrf52840.h:
 
@@ -228,6 +230,8 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_non_zephyr/src/qplatform.c.obj: /ho
 /usr/include/newlib/_ansi.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/app_util.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h:
 
@@ -305,4 +309,6 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_non_zephyr/src/qplatform.c.obj: /ho
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_compiler.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h:
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h:

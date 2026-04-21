@@ -16,6 +16,7 @@
 #include "controlTask.h"
 #include "HAL_error.h"
 #include "HAL_cpu.h"
+#include "HAL_usb.h"
 #include "flushTask.h"
 #include "defaultTask.h"
 #include <stddef.h>
@@ -44,10 +45,10 @@ void assert_nrf_callback(uint16_t line_num, const uint8_t *p_file_name)
     app_error_handler(DEAD_BEEF, line_num, p_file_name);
 }
 
+static char advertising_name[32];
+
 int main(void)
 {
-    char advertising_name[32];
-
     handle_fpu_irq();
     BoardInit();
     bsp_board_leds_off();
@@ -72,6 +73,10 @@ int main(void)
     ble_init(advertising_name);
     bsp_board_led_on(BSP_BOARD_LED_2);
     rtt_trace("main: ble_init returned");
+
+    /* SD is up — enable USB power-event detection so USB CDC-ACM enumerates. */
+    deca_usb_start_power_events();
+    rtt_trace("main: usb power events enabled");
 
     /* Initialize interface output thread. */
     FlushTaskInit();

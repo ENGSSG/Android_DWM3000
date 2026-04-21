@@ -16,6 +16,13 @@
 #define LOG_TAG "qplatform"
 #include "deca_interface.h"
 #include "qlog.h"
+#include "SEGGER_RTT.h"
+
+static void qplat_rtt_trace(const char *msg)
+{
+	SEGGER_RTT_WriteString(0, msg);
+	SEGGER_RTT_WriteString(0, "\r\n");
+}
 
 /* Delays */
 #define RESET_LOW_DELAY_MS (1)
@@ -242,15 +249,24 @@ enum qerr qplatform_init(void)
 {
 	enum qerr r;
 
+	qplat_rtt_trace("qplatform_init: begin");
+
 	r = qplatform_uwb_interrupt_disable();
-	if (r)
+	if (r) {
+		qplat_rtt_trace("qplatform_init: interrupt_disable failed");
 		return r;
+	}
+	qplat_rtt_trace("qplatform_init: after interrupt_disable");
 
 	qplatform_uwb_reset();
+	qplat_rtt_trace("qplatform_init: after uwb_reset");
 
 	r = qplatform_uwb_spi_init(&dwt_spi);
-	if (r)
+	if (r) {
+		qplat_rtt_trace("qplatform_init: spi_init failed");
 		return r;
+	}
+	qplat_rtt_trace("qplatform_init: after spi_init");
 
 	dw.coex_gpio_pin = -1;
 	dwt_probe_interf.dw = &dw;
@@ -263,7 +279,10 @@ enum qerr qplatform_init(void)
 	dwt_probe_interf.dw_driver_num =
 		(sizeof(qplatform_dwt_drv_list) / sizeof((qplatform_dwt_drv_list)[0]));
 
-	return dwt_probe(&dwt_probe_interf);
+	qplat_rtt_trace("qplatform_init: before dwt_probe");
+	r = dwt_probe(&dwt_probe_interf);
+	qplat_rtt_trace("qplatform_init: after dwt_probe");
+	return r;
 }
 
 enum qerr qplatform_deinit(void)

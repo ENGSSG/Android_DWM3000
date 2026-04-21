@@ -74,4 +74,6 @@ qplatform/CMakeFiles/qplatform.dir/qm33_qhal_common/src/qplatform.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/experimental_section_vars/nrf_section.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h

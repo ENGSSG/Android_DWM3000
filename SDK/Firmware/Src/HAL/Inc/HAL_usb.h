@@ -28,3 +28,7 @@ struct hal_usb_s
 };
 
 extern const struct hal_usb_s Usb;
+
+/* Enable USB power-event detection after SoftDevice has been enabled.
+ * Must be called post-SD because it uses SD SVCs on nRF52840 builds. */
+void deca_usb_start_power_events(void);

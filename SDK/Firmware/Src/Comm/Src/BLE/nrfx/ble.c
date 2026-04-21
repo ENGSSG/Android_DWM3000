@@ -142,10 +142,11 @@ static void advertising_start(void *parm)
 {
     ret_code_t err_code;
     (void)parm;
-    rtt_trace("ble: advertising_start");
+    rtt_trace("ble: advertising_start enter");
     QLOGI("ble: advertising_start");
     err_code = ble_advertising_start(&m_advertising, BLE_ADV_MODE_FAST);
     APP_ERROR_CHECK(err_code);
+    rtt_trace("ble: advertising_start done");
 }
 
 void ble_init(char *gap_name)

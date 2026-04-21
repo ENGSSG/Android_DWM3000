@@ -11,6 +11,8 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/home/engssg/Android_DWM3000/SDK/Firmw
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./controlTask/controlTask.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../Inc/HAL_error.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../Inc/HAL_cpu.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../Inc/HAL_usb.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Inc/comm_helpers.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./flushTask/flushTask.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./defaultTask/defaultTask.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \

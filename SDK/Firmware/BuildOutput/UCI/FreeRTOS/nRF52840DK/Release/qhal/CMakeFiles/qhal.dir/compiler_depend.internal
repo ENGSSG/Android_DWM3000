@@ -624,6 +624,8 @@ qhal/CMakeFiles/qhal.dir/src/qm33/qpwr.c.obj
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h

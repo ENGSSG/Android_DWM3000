@@ -15,6 +15,14 @@
 #include "deca_version.h"
 #include "deca_private.h"
 
+extern int SEGGER_RTT_WriteString(unsigned BufferIndex, const char *s);
+
+static void dwt_probe_rtt_trace(const char *msg)
+{
+    SEGGER_RTT_WriteString(0, msg);
+    SEGGER_RTT_WriteString(0, "\r\n");
+}
+
 /*! The device ID regiser address, common to all QM33xxx/DW3xxx devices */
 #define DW3XXX_DEVICE_ID (0x0)
 
@@ -67,6 +75,7 @@ int32_t dwt_probe(struct dwt_probe_s *probe_interf)
     uint8_t buf[sizeof(uint32_t)];
     uint8_t addr;
 
+    dwt_probe_rtt_trace("dwt_probe: enter");
     if(probe_interf != NULL)
     {
         if(probe_interf->dw == NULL)
@@ -80,12 +89,16 @@ int32_t dwt_probe(struct dwt_probe_s *probe_interf)
         dw->SPI = (struct dwt_spi_s*)probe_interf->spi;
         dw->wakeup_device_with_io = probe_interf->wakeup_device_with_io;
 
+        dwt_probe_rtt_trace("dwt_probe: before wakeup");
         dw->wakeup_device_with_io();
+        dwt_probe_rtt_trace("dwt_probe: after wakeup");
 
         // Device ID address is common in between all DW chips
         addr = (uint8_t)DW3XXX_DEVICE_ID;
 
+        dwt_probe_rtt_trace("dwt_probe: before readfromspi");
         (void)dw->SPI->readfromspi(sizeof(uint8_t), &addr, sizeof(buf), buf);
+        dwt_probe_rtt_trace("dwt_probe: after readfromspi");
         devId = (((uint32_t)buf[3] << 24UL) | ((uint32_t)buf[2] << 16UL) | ((uint32_t)buf[1] << 8UL) | (uint32_t)buf[0]);
 
 #ifdef WIN32
@@ -101,6 +114,7 @@ int32_t dwt_probe(struct dwt_probe_s *probe_interf)
         }
 
 #else
+        dwt_probe_rtt_trace("dwt_probe: driver list loop");
         struct dwt_driver_s **driver_list = probe_interf->driver_list;
         for (uint8_t i = 0U; i < probe_interf->dw_driver_num; i++)
         {
@@ -114,6 +128,7 @@ int32_t dwt_probe(struct dwt_probe_s *probe_interf)
 #endif
     }
 
+    dwt_probe_rtt_trace("dwt_probe: exit");
     return (int32_t)ret;
 }
 

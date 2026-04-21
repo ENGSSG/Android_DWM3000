@@ -23,6 +23,13 @@
 #include "InterfUsb.h"
 #include "HAL_usb.h"
 #include "nrf_drv_clock.h"
+#include "SEGGER_RTT.h"
+
+static void usb_rtt_trace(const char *msg)
+{
+    SEGGER_RTT_WriteString(0, msg);
+    SEGGER_RTT_WriteString(0, "\r\n");
+}
 
 #define LED_USB_RESUME   (BSP_BOARD_LED_0)
 #define LED_CDC_ACM_OPEN (BSP_BOARD_LED_1)
@@ -210,8 +217,13 @@ static void deca_usb_init(CommRxCallback callback)
     if (USBD_POWER_DETECTION)
     {
 #ifndef SOFTDEVICE_PRESENT
+        /* Without SoftDevice we can enable power events immediately. */
         ret = app_usbd_power_events_enable();
         APP_ERROR_CHECK(ret);
+#else
+        /* With SoftDevice, defer to deca_usb_start_power_events() — called
+         * from main.c after ble_init() has enabled the SoftDevice. */
+        usb_rtt_trace("usb: init deferred power events (SD)");
 #endif
     }
     else
@@ -219,6 +231,25 @@ static void deca_usb_init(CommRxCallback callback)
         app_usbd_enable();
         app_usbd_start();
     }
+}
+
+void deca_usb_start_power_events(void)
+{
+#ifdef SOFTDEVICE_PRESENT
+    if (!USBD_POWER_DETECTION)
+    {
+        usb_rtt_trace("usb: start_power_events skipped (no detection)");
+        return;
+    }
+    usb_rtt_trace("usb: app_usbd_power_events_enable begin");
+    ret_code_t ret = app_usbd_power_events_enable();
+    if (ret != NRF_SUCCESS)
+    {
+        usb_rtt_trace("usb: power_events_enable failed");
+    }
+    APP_ERROR_CHECK(ret);
+    usb_rtt_trace("usb: app_usbd_power_events_enable ok");
+#endif
 }
 
 static bool isTxBufferEmpty(void)

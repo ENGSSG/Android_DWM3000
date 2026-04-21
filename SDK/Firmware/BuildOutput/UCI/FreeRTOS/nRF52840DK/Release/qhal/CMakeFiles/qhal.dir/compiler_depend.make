@@ -616,6 +616,8 @@ qhal/CMakeFiles/qhal.dir/src/qm33/qpwr.c.obj: /home/engssg/Android_DWM3000/SDK/F
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/cmsis_version.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/core_cm4.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/toolchain/cmsis/include/mpu_armv7.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/compiler_abstraction.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
@@ -665,6 +667,8 @@ qhal/CMakeFiles/qhal.dir/src/qrtc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmwa
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/include/qrtc.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/src/qrtc.c:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h:
 
@@ -861,6 +865,8 @@ qhal/CMakeFiles/qhal.dir/src/qrtc.c.obj: /home/engssg/Android_DWM3000/SDK/Firmwa
 /usr/include/newlib/string.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/modules/nrfx/hal/nrf_nvmc.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_nvic.h:
 

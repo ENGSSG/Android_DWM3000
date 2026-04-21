@@ -67,4 +67,6 @@ qhal/CMakeFiles/qhal.dir/src/qm33/qpwr.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/include/qpwr.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qhal/include/qspi.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qtime.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h

@@ -11,6 +11,13 @@
 #include <qpwr.h>
 #include <qspi.h>
 #include <qtime.h>
+#include "SEGGER_RTT.h"
+
+static void qpwr_rtt_trace(const char *msg)
+{
+	SEGGER_RTT_WriteString(0, msg);
+	SEGGER_RTT_WriteString(0, "\r\n");
+}
 
 #if defined(__ZEPHYR__) && !((KERNEL_VERSION_MAJOR >= 3) && (KERNEL_VERSION_MINOR >= 1))
 enum qerr qpwr_uwb_sleep(void)
@@ -140,15 +147,22 @@ enum qerr qpwr_uwb_sleep(void)
 
 enum qerr qpwr_uwb_wakeup(void)
 {
+	qpwr_rtt_trace("qpwr_wakeup: enter");
 	int key = qirq_lock();
 	if (is_sleeping) {
+		qpwr_rtt_trace("qpwr_wakeup: CS low");
 		qgpio_pin_configure(&qm33_qspi_config.cs_pin, QGPIO_OUTPUT_LOW);
+		qpwr_rtt_trace("qpwr_wakeup: usleep A");
 		qtime_usleep(WAKEUP_CS_TOGGLE_US);
+		qpwr_rtt_trace("qpwr_wakeup: CS high");
 		qgpio_pin_configure(&qm33_qspi_config.cs_pin, QGPIO_OUTPUT_HIGH);
+		qpwr_rtt_trace("qpwr_wakeup: usleep B");
 		qtime_usleep(WAKEUP_DELAY_US);
+		qpwr_rtt_trace("qpwr_wakeup: awake");
 		is_sleeping = false;
 	}
 	qirq_unlock(key);
+	qpwr_rtt_trace("qpwr_wakeup: exit");
 	return QERR_SUCCESS;
 }
 
