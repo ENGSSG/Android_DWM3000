@@ -1,0 +1,23 @@
+# Vendor SDKs and installers (distribute via GitHub Releases or Qorvo site)
+SDK/Firmware/DW3_QM33_SDK_*.zip
+SDK/Tools/GUI/Linux/*.sh
+SDK/Tools/GUI/Windows/*.exe
+SDK/Tools/GUI/macOS/*.dmg
+
+# Prebuilt static libraries
+SDK/Firmware/BuildOutput/**/*.a
+
+# Built Android artifacts
+uwb-ranging-main/android_app/app/release/*.apk
+**/build/
+**/.gradle/
+
+# Large binary media
+Drivers/API/Build_Platforms/nRF52840-DK/sdk/external/fatfs/doc/res/*.mp4
+
+# Common
+*.o
+*.obj
+*.exe
+*.out
+.DS_Store
