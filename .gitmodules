@@ -1,0 +1,3 @@
+[submodule "DWM3000_Android_tracker"]
+	path = DWM3000_Android_tracker
+	url = https://github.com/ENGSSG/DWM3000_Android_tracker.git
