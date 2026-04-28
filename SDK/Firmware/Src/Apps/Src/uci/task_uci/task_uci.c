@@ -25,7 +25,11 @@
 #include "uwbmac_helper.h"
 #include "rtls_version.h"
 #include "qmsg_queue.h"
+#include "qmalloc.h"
+#include "qtime.h"
+#include "qirq.h"
 #include "task_signal.h"
+#include "SEGGER_RTT.h"
 #include "int_priority.h"
 #include "HAL_error.h"
 #include "qlog.h"
@@ -221,9 +225,12 @@ void uci_task(void *argument)
     }
 
     uciTask.Exit = 2;
+    /* Use qtime_msleep_yield (vTaskDelay) here, NOT qtime_msleep — the latter
+     * is a busy-spin (nrfx_systick) when NRFX_SYSTICK_ENABLED, which would
+     * starve any lower-priority task trying to terminate us. */
     while (uciTask.Exit == 2)
     {
-        qtime_msleep(1);
+        qtime_msleep_yield(1);
     };
 }
 
@@ -233,15 +240,59 @@ void uci_task_process_incoming(struct cc_buff *buf)
 }
 
 /**
- * @brief Kill all tasks and timers related to uci if any
+ * @brief Kill all tasks and timers related to uci if any.
+ *
+ * The UCI task blocks on its message queue with QOSAL_WAIT_FOREVER and has no
+ * qsignal, so the generic terminate_task() helper deadlocks against it. Instead
+ * we set Exit=1 ourselves, post a no-op wakeup message so the queue read returns,
+ * and wait for the task to acknowledge by setting Exit=2.
  */
 void uci_terminate(void)
 {
-    terminate_task(&uciTask);
-    uci_uninit(&ctx.uci_server);
+    SEGGER_RTT_WriteString(0, "UCI: terminate enter\r\n");
+    if (uciTask.thread)
+    {
+        uciTask.Exit = 1;
+        SEGGER_RTT_WriteString(0, "UCI: Exit=1, posting wakeup\r\n");
+
+        if (uci_msg_queue)
+        {
+            struct uci_mail_data wakeup = {.message_type = UCI_DATA_OUT, .buf = NULL};
+            qmsg_queue_put(uci_msg_queue, &wakeup);
+            SEGGER_RTT_WriteString(0, "UCI: wakeup posted\r\n");
+        }
+
+        SEGGER_RTT_WriteString(0, "UCI: waiting for Exit==2\r\n");
+        /* qtime_msleep_yield = vTaskDelay; qtime_msleep is a busy-spin and
+         * would starve the higher-priority UCI task we're waiting on. */
+        while (uciTask.Exit != 2)
+        {
+            qtime_msleep_yield(1);
+        }
+        SEGGER_RTT_WriteString(0, "UCI: Exit==2 seen, deleting thread\r\n");
+
+        unsigned int lock = qirq_lock();
+        if (qthread_delete(uciTask.thread) == QERR_SUCCESS)
+        {
+            uciTask.thread = NULL;
+        }
+        if (uciTask.task_stack)
+        {
+            qfree(uciTask.task_stack);
+            uciTask.task_stack = NULL;
+        }
+        qirq_unlock(lock);
+        SEGGER_RTT_WriteString(0, "UCI: thread deleted\r\n");
+    }
+    /* uci_close_backends() already calls uci_uninit(&ctx.uci_server) — calling
+     * it twice hangs on the already-uninitialized server. */
+    SEGGER_RTT_WriteString(0, "UCI: uci_process_terminate\r\n");
     uci_process_terminate();
+    SEGGER_RTT_WriteString(0, "UCI: uci_close_backends\r\n");
     uci_close_backends();
+    SEGGER_RTT_WriteString(0, "UCI: uwbmac_helper_deinit\r\n");
     uwbmac_helper_deinit();
+    SEGGER_RTT_WriteString(0, "UCI: terminate exit\r\n");
 }
 
 /**
@@ -410,32 +461,44 @@ int uci_open_backends()
 
 void uci_close_backends()
 {
+    SEGGER_RTT_WriteString(0, "UCB: enter\r\n");
 #ifdef UCI_FIRA_BACKEND
+    SEGGER_RTT_WriteString(0, "UCB: fira_release\r\n");
     uci_backend_fira_release(&ctx.fira_ctx);
 #endif
 
 #ifdef UCI_FTM_BACKEND
+    SEGGER_RTT_WriteString(0, "UCB: pctt_release\r\n");
     uci_backend_pctt_release(&ctx.pctt_ctx);
 #endif
 
 #ifdef UCI_CONF_MANAGER
+    SEGGER_RTT_WriteString(0, "UCB: cfg_mgr_unregister\r\n");
     uci_backend_cfg_mgr_unregister();
 #endif
 
 #ifdef UCI_MAC_BACKEND
+    SEGGER_RTT_WriteString(0, "UCB: mac_release\r\n");
     uci_backend_mac_release(&ctx.mac_ctx);
 #endif
 
+    SEGGER_RTT_WriteString(0, "UCB: manager_release\r\n");
     uci_backend_manager_release(&ctx.sess_man);
 
+    SEGGER_RTT_WriteString(0, "UCB: core_release\r\n");
     uci_backend_core_release(&ctx.core_ctx);
 
     /* We are stopping everything, we will send the device state NTF manually. */
+    SEGGER_RTT_WriteString(0, "UCB: register_device_state_callback NULL\r\n");
     uwbmac_register_device_state_callback(ctx.uwbmac_ctx, NULL, NULL);
+    SEGGER_RTT_WriteString(0, "UCB: default_coordinator_init\r\n");
     default_coordinator_init(&ctx.coord, ctx.uwbmac_ctx);
+    SEGGER_RTT_WriteString(0, "UCB: uci_uninit\r\n");
     uci_uninit(&ctx.uci_server);
 
+    SEGGER_RTT_WriteString(0, "UCB: uwbmac_exit\r\n");
     uwbmac_exit(ctx.uwbmac_ctx);
+    SEGGER_RTT_WriteString(0, "UCB: exit\r\n");
 }
 
 const app_definition_t helpers_uci_node[] __attribute__((section(".known_apps"))) = {

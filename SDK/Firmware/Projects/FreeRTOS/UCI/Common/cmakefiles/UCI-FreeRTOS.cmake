@@ -162,15 +162,18 @@ list(APPEND LINK_LIB_LIST "reporter")
 add_subdirectory(${PROJECT_BASE}/Src/Helpers Helpers)
 list(APPEND LINK_LIB_LIST "Helpers")
 
+add_definitions(-DUCI_FIRA_BACKEND)
+add_subdirectory(${PROJECT_BASE}/Src/Apps/Src/uci uci)
+list(APPEND LINK_LIB_LIST "uci")
+
+add_subdirectory(${PROJECT_BASE}/Src/Apps/Src/ble_session ble_session)
+list(APPEND LINK_LIB_LIST "ble_session")
+
 add_subdirectory(${PROJECT_BASE}/Src/Comm/Src/BLE BLE)
 list(APPEND LINK_LIB_LIST "BLE")
 
 add_subdirectory(${PROJECT_BASE}/Src/Comm Comm)
 list(APPEND LINK_LIB_LIST "Interface")
-
-add_definitions(-DUCI_FIRA_BACKEND)
-add_subdirectory(${PROJECT_BASE}/Src/Apps/Src/uci uci)
-list(APPEND LINK_LIB_LIST "uci")
 
 # List all libraries
 list(APPEND STATIC_LINK_LIB_LIST "uwbstack_core")

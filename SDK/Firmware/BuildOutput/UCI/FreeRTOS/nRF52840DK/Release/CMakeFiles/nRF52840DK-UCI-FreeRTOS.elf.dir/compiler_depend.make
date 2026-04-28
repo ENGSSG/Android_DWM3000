@@ -149,8 +149,10 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/home/engssg/Android_DWM3000/SDK/Firmw
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/flushTask/flushTask.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Inc/thisBoard.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/Common/custom_board.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Inc/comm_helpers.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_cpu.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_error.h \
+  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_usb.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/circular_buffer.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/deca_error.h \
   /home/engssg/Android_DWM3000/SDK/Firmware/Src/Logger/log_processing.h \
@@ -381,17 +383,21 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/home/engssg/Android_DWM3000/SDK/Firmw
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qassert.h:
 
-/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h:
-
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/dwt_uwb_driver/deca_device_api.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/Common/helper_platform_l1_config.c:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/circular_buffer.h:
 
+/home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qtime_impl.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_usb.h:
+
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qatomic.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_cpu.h:
+
+/home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Inc/comm_helpers.h:
 
 /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwbstack_libs/delivery/full/Release/include/uwbstack_bundle/l1_config.h:
 

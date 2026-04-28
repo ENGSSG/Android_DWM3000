@@ -847,6 +847,30 @@ nrfx/ble.c.s:
 	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/nrfx/ble.c.s
 .PHONY : nrfx/ble.c.s
 
+nrfx/fff0/ble_fff0.obj: nrfx/fff0/ble_fff0.c.obj
+.PHONY : nrfx/fff0/ble_fff0.obj
+
+# target to build an object file
+nrfx/fff0/ble_fff0.c.obj:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/nrfx/fff0/ble_fff0.c.obj
+.PHONY : nrfx/fff0/ble_fff0.c.obj
+
+nrfx/fff0/ble_fff0.i: nrfx/fff0/ble_fff0.c.i
+.PHONY : nrfx/fff0/ble_fff0.i
+
+# target to preprocess a source file
+nrfx/fff0/ble_fff0.c.i:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/nrfx/fff0/ble_fff0.c.i
+.PHONY : nrfx/fff0/ble_fff0.c.i
+
+nrfx/fff0/ble_fff0.s: nrfx/fff0/ble_fff0.c.s
+.PHONY : nrfx/fff0/ble_fff0.s
+
+# target to generate assembly for a file
+nrfx/fff0/ble_fff0.c.s:
+	cd /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release && $(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/nrfx/fff0/ble_fff0.c.s
+.PHONY : nrfx/fff0/ble_fff0.c.s
+
 nrfx/qnis/ble_qnis.obj: nrfx/qnis/ble_qnis.c.obj
 .PHONY : nrfx/qnis/ble_qnis.obj
 
@@ -968,6 +992,9 @@ help:
 	@echo "... nrfx/ble.obj"
 	@echo "... nrfx/ble.i"
 	@echo "... nrfx/ble.s"
+	@echo "... nrfx/fff0/ble_fff0.obj"
+	@echo "... nrfx/fff0/ble_fff0.i"
+	@echo "... nrfx/fff0/ble_fff0.s"
 	@echo "... nrfx/qnis/ble_qnis.obj"
 	@echo "... nrfx/qnis/ble_qnis.i"
 	@echo "... nrfx/qnis/ble_qnis.s"

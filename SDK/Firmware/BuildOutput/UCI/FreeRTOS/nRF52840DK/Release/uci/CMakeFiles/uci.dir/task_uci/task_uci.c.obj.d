@@ -69,8 +69,7 @@ uci/CMakeFiles/uci.dir/task_uci/task_uci.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/uci/./uwbmac_helper/include/uwbmac_helper.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/rtls_version.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qmsg_queue.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./task/task_signal.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qirq.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/freertos/qosal_impl.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/ProjectDefinition/FreeRTOSConfig.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/nrf_soc.h \
@@ -117,7 +116,11 @@ uci/CMakeFiles/uci.dir/task_uci/task_uci.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/util/nordic_common.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/./task/task_signal.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qthread.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Libs/uwb-stack/libs/qosal/include/qsignal.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/../../Inc/int_priority.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Src/nrfx/../../../Boards/Src/nRF52840DK/Common/custom_board.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/boards/pca10056.h \

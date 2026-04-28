@@ -461,6 +461,32 @@ Helpers/fast:
 .PHONY : Helpers/fast
 
 #=============================================================================
+# Target rules for targets named uci
+
+# Build rule for target.
+uci: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uci
+.PHONY : uci
+
+# fast build rule for target.
+uci/fast:
+	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/build
+.PHONY : uci/fast
+
+#=============================================================================
+# Target rules for targets named ble_session
+
+# Build rule for target.
+ble_session: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble_session
+.PHONY : ble_session
+
+# fast build rule for target.
+ble_session/fast:
+	$(MAKE) $(MAKESILENT) -f ble_session/CMakeFiles/ble_session.dir/build.make ble_session/CMakeFiles/ble_session.dir/build
+.PHONY : ble_session/fast
+
+#=============================================================================
 # Target rules for targets named BLE
 
 # Build rule for target.
@@ -485,19 +511,6 @@ Interface: cmake_check_build_system
 Interface/fast:
 	$(MAKE) $(MAKESILENT) -f Comm/CMakeFiles/Interface.dir/build.make Comm/CMakeFiles/Interface.dir/build
 .PHONY : Interface/fast
-
-#=============================================================================
-# Target rules for targets named uci
-
-# Build rule for target.
-uci: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uci
-.PHONY : uci
-
-# fast build rule for target.
-uci/fast:
-	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/build
-.PHONY : uci/fast
 
 #=============================================================================
 # Target rules for targets named SoftDeviceNrfx
@@ -753,6 +766,7 @@ help:
 	@echo "... SoftDeviceNrfx"
 	@echo "... UWB"
 	@echo "... app_common"
+	@echo "... ble_session"
 	@echo "... fira"
 	@echo "... log_rtt"
 	@echo "... logger"

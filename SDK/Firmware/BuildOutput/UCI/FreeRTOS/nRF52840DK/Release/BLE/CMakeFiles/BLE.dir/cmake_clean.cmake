@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BLE.dir/nrfx/anis/ble_anis.c.obj.d"
   "CMakeFiles/BLE.dir/nrfx/ble.c.obj"
   "CMakeFiles/BLE.dir/nrfx/ble.c.obj.d"
+  "CMakeFiles/BLE.dir/nrfx/fff0/ble_fff0.c.obj"
+  "CMakeFiles/BLE.dir/nrfx/fff0/ble_fff0.c.obj.d"
   "CMakeFiles/BLE.dir/nrfx/qnis/ble_qnis.c.obj"
   "CMakeFiles/BLE.dir/nrfx/qnis/ble_qnis.c.obj.d"
   "libBLE.a"

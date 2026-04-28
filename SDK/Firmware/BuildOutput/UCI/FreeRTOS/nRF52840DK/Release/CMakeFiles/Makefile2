@@ -81,9 +81,10 @@ all: UWB/all
 all: AppFira/all
 all: reporter/all
 all: Helpers/all
+all: uci/all
+all: ble_session/all
 all: BLE/all
 all: Comm/all
-all: uci/all
 all: SoftDeviceNrfx/all
 .PHONY : all
 
@@ -104,9 +105,10 @@ preinstall: UWB/preinstall
 preinstall: AppFira/preinstall
 preinstall: reporter/preinstall
 preinstall: Helpers/preinstall
+preinstall: uci/preinstall
+preinstall: ble_session/preinstall
 preinstall: BLE/preinstall
 preinstall: Comm/preinstall
-preinstall: uci/preinstall
 preinstall: SoftDeviceNrfx/preinstall
 .PHONY : preinstall
 
@@ -129,9 +131,10 @@ clean: UWB/clean
 clean: AppFira/clean
 clean: reporter/clean
 clean: Helpers/clean
+clean: uci/clean
+clean: ble_session/clean
 clean: BLE/clean
 clean: Comm/clean
-clean: uci/clean
 clean: SoftDeviceNrfx/clean
 .PHONY : clean
 
@@ -382,6 +385,21 @@ UWB/qmath/clean: UWB/qmath/CMakeFiles/qmath.dir/clean
 .PHONY : UWB/qmath/clean
 
 #=============================================================================
+# Directory level rules for directory ble_session
+
+# Recursive "all" directory target.
+ble_session/all: ble_session/CMakeFiles/ble_session.dir/all
+.PHONY : ble_session/all
+
+# Recursive "preinstall" directory target.
+ble_session/preinstall:
+.PHONY : ble_session/preinstall
+
+# Recursive "clean" directory target.
+ble_session/clean: ble_session/CMakeFiles/ble_session.dir/clean
+.PHONY : ble_session/clean
+
+#=============================================================================
 # Directory level rules for directory logger
 
 # Recursive "all" directory target.
@@ -483,9 +501,10 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: ProjectDefinition/CMakeFiles/Pro
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: logger/CMakeFiles/logger.dir/all
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: AppFira/CMakeFiles/fira.dir/all
+CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: uci/CMakeFiles/uci.dir/all
+CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: ble_session/CMakeFiles/ble_session.dir/all
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: BLE/CMakeFiles/BLE.dir/all
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: Comm/CMakeFiles/Interface.dir/all
-CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: uci/CMakeFiles/uci.dir/all
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/build.make CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/build.make CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/build
@@ -494,7 +513,7 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all: SoftDeviceNrfx/CMakeFiles/SoftDe
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/rule
@@ -520,7 +539,7 @@ CMakeFiles/uwbdriver.dir/all: Nordic/CMakeFiles/SDK.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uwbdriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 79
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 80
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uwbdriver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : CMakeFiles/uwbdriver.dir/rule
@@ -593,12 +612,12 @@ Nordic/CMakeFiles/sdk_systick.dir/clean:
 Nordic/CMakeFiles/log_rtt.dir/all: ProjectDefinition/CMakeFiles/ProjectDefinition.dir/all
 	$(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/depend
 	$(MAKE) $(MAKESILENT) -f Nordic/CMakeFiles/log_rtt.dir/build.make Nordic/CMakeFiles/log_rtt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=70,71,72,73,74,75 "Built target log_rtt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=71,72,73,74,75 "Built target log_rtt"
 .PHONY : Nordic/CMakeFiles/log_rtt.dir/all
 
 # Build rule for subdir invocation for target.
 Nordic/CMakeFiles/log_rtt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nordic/CMakeFiles/log_rtt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : Nordic/CMakeFiles/log_rtt.dir/rule
@@ -624,7 +643,7 @@ Nordic/CMakeFiles/SDK.dir/all: FreeRTOS/CMakeFiles/OS.dir/all
 
 # Build rule for subdir invocation for target.
 Nordic/CMakeFiles/SDK.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 77
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nordic/CMakeFiles/SDK.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : Nordic/CMakeFiles/SDK.dir/rule
@@ -650,7 +669,7 @@ FreeRTOS/CMakeFiles/OS.dir/all: OSAL/qosal/CMakeFiles/qosal.dir/all
 
 # Build rule for subdir invocation for target.
 FreeRTOS/CMakeFiles/OS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/CMakeFiles/OS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : FreeRTOS/CMakeFiles/OS.dir/rule
@@ -674,7 +693,7 @@ EventManager/CMakeFiles/EventManager.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
 EventManager/CMakeFiles/EventManager.dir/all: Comm/CMakeFiles/Interface.dir/all
 	$(MAKE) $(MAKESILENT) -f EventManager/CMakeFiles/EventManager.dir/build.make EventManager/CMakeFiles/EventManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f EventManager/CMakeFiles/EventManager.dir/build.make EventManager/CMakeFiles/EventManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=14,15 "Built target EventManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=15 "Built target EventManager"
 .PHONY : EventManager/CMakeFiles/EventManager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -705,7 +724,7 @@ OSAL/qosal/CMakeFiles/qosal.dir/all: nRF52840DK/CMakeFiles/platform_l1.dir/all
 
 # Build rule for subdir invocation for target.
 OSAL/qosal/CMakeFiles/qosal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OSAL/qosal/CMakeFiles/qosal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : OSAL/qosal/CMakeFiles/qosal.dir/rule
@@ -731,7 +750,7 @@ nRF52840DK/CMakeFiles/platform_l1.dir/all: nRF52840DK/CMakeFiles/Board.dir/all
 
 # Build rule for subdir invocation for target.
 nRF52840DK/CMakeFiles/platform_l1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nRF52840DK/CMakeFiles/platform_l1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : nRF52840DK/CMakeFiles/platform_l1.dir/rule
@@ -757,7 +776,7 @@ nRF52840DK/CMakeFiles/Board.dir/all: HAL/CMakeFiles/HAL.dir/all
 
 # Build rule for subdir invocation for target.
 nRF52840DK/CMakeFiles/Board.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nRF52840DK/CMakeFiles/Board.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : nRF52840DK/CMakeFiles/Board.dir/rule
@@ -783,7 +802,7 @@ HAL/CMakeFiles/HAL.dir/all: qhal/CMakeFiles/qhal.dir/all
 
 # Build rule for subdir invocation for target.
 HAL/CMakeFiles/HAL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HAL/CMakeFiles/HAL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : HAL/CMakeFiles/HAL.dir/rule
@@ -809,7 +828,7 @@ qhal/CMakeFiles/qhal.dir/all: qplatform/CMakeFiles/qplatform.dir/all
 
 # Build rule for subdir invocation for target.
 qhal/CMakeFiles/qhal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qhal/CMakeFiles/qhal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : qhal/CMakeFiles/qhal.dir/rule
@@ -835,7 +854,7 @@ qplatform/CMakeFiles/qplatform.dir/all: qplatform/CMakeFiles/qplatform_deca_comp
 
 # Build rule for subdir invocation for target.
 qplatform/CMakeFiles/qplatform.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qplatform/CMakeFiles/qplatform.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : qplatform/CMakeFiles/qplatform.dir/rule
@@ -861,7 +880,7 @@ qplatform/CMakeFiles/qplatform_deca_compat.dir/all: AppConfig/CMakeFiles/Config.
 
 # Build rule for subdir invocation for target.
 qplatform/CMakeFiles/qplatform_deca_compat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qplatform/CMakeFiles/qplatform_deca_compat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : qplatform/CMakeFiles/qplatform_deca_compat.dir/rule
@@ -890,7 +909,7 @@ logger/CMakeFiles/logger.dir/all: Comm/CMakeFiles/Interface.dir/all
 
 # Build rule for subdir invocation for target.
 logger/CMakeFiles/logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 80
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 81
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logger/CMakeFiles/logger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : logger/CMakeFiles/logger.dir/rule
@@ -911,12 +930,12 @@ logger/CMakeFiles/logger.dir/clean:
 AppConfig/CMakeFiles/Config.dir/all: AppCommon/CMakeFiles/app_common.dir/all
 	$(MAKE) $(MAKESILENT) -f AppConfig/CMakeFiles/Config.dir/build.make AppConfig/CMakeFiles/Config.dir/depend
 	$(MAKE) $(MAKESILENT) -f AppConfig/CMakeFiles/Config.dir/build.make AppConfig/CMakeFiles/Config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num= "Built target Config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=14 "Built target Config"
 .PHONY : AppConfig/CMakeFiles/Config.dir/all
 
 # Build rule for subdir invocation for target.
 AppConfig/CMakeFiles/Config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppConfig/CMakeFiles/Config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : AppConfig/CMakeFiles/Config.dir/rule
@@ -963,7 +982,7 @@ AppCommon/CMakeFiles/app_common.dir/clean:
 UWB/CMakeFiles/UWB.dir/all: reporter/CMakeFiles/reporter.dir/all
 	$(MAKE) $(MAKESILENT) -f UWB/CMakeFiles/UWB.dir/build.make UWB/CMakeFiles/UWB.dir/depend
 	$(MAKE) $(MAKESILENT) -f UWB/CMakeFiles/UWB.dir/build.make UWB/CMakeFiles/UWB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=64 "Built target UWB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=63,64 "Built target UWB"
 .PHONY : UWB/CMakeFiles/UWB.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1018,12 +1037,12 @@ AppFira/CMakeFiles/fira.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
 AppFira/CMakeFiles/fira.dir/all: Comm/CMakeFiles/Interface.dir/all
 	$(MAKE) $(MAKESILENT) -f AppFira/CMakeFiles/fira.dir/build.make AppFira/CMakeFiles/fira.dir/depend
 	$(MAKE) $(MAKESILENT) -f AppFira/CMakeFiles/fira.dir/build.make AppFira/CMakeFiles/fira.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=69 "Built target fira"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=69,70 "Built target fira"
 .PHONY : AppFira/CMakeFiles/fira.dir/all
 
 # Build rule for subdir invocation for target.
 AppFira/CMakeFiles/fira.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 80
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppFira/CMakeFiles/fira.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : AppFira/CMakeFiles/fira.dir/rule
@@ -1049,7 +1068,7 @@ reporter/CMakeFiles/reporter.dir/all: Helpers/CMakeFiles/Helpers.dir/all
 
 # Build rule for subdir invocation for target.
 reporter/CMakeFiles/reporter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reporter/CMakeFiles/reporter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : reporter/CMakeFiles/reporter.dir/rule
@@ -1077,7 +1096,7 @@ Helpers/CMakeFiles/Helpers.dir/all: Comm/CMakeFiles/Interface.dir/all
 
 # Build rule for subdir invocation for target.
 Helpers/CMakeFiles/Helpers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Helpers/CMakeFiles/Helpers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : Helpers/CMakeFiles/Helpers.dir/rule
@@ -1092,6 +1111,66 @@ Helpers/CMakeFiles/Helpers.dir/clean:
 .PHONY : Helpers/CMakeFiles/Helpers.dir/clean
 
 #=============================================================================
+# Target rules for target uci/CMakeFiles/uci.dir
+
+# All Build rule for target.
+uci/CMakeFiles/uci.dir/all: CMakeFiles/uwbdriver.dir/all
+uci/CMakeFiles/uci.dir/all: ProjectDefinition/CMakeFiles/ProjectDefinition.dir/all
+uci/CMakeFiles/uci.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
+uci/CMakeFiles/uci.dir/all: Comm/CMakeFiles/Interface.dir/all
+	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/depend
+	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=96,97 "Built target uci"
+.PHONY : uci/CMakeFiles/uci.dir/all
+
+# Build rule for subdir invocation for target.
+uci/CMakeFiles/uci.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 82
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uci/CMakeFiles/uci.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
+.PHONY : uci/CMakeFiles/uci.dir/rule
+
+# Convenience name for target.
+uci: uci/CMakeFiles/uci.dir/rule
+.PHONY : uci
+
+# clean rule for target.
+uci/CMakeFiles/uci.dir/clean:
+	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/clean
+.PHONY : uci/CMakeFiles/uci.dir/clean
+
+#=============================================================================
+# Target rules for target ble_session/CMakeFiles/ble_session.dir
+
+# All Build rule for target.
+ble_session/CMakeFiles/ble_session.dir/all: CMakeFiles/uwbdriver.dir/all
+ble_session/CMakeFiles/ble_session.dir/all: ProjectDefinition/CMakeFiles/ProjectDefinition.dir/all
+ble_session/CMakeFiles/ble_session.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
+ble_session/CMakeFiles/ble_session.dir/all: AppFira/CMakeFiles/fira.dir/all
+ble_session/CMakeFiles/ble_session.dir/all: uci/CMakeFiles/uci.dir/all
+ble_session/CMakeFiles/ble_session.dir/all: Comm/CMakeFiles/Interface.dir/all
+	$(MAKE) $(MAKESILENT) -f ble_session/CMakeFiles/ble_session.dir/build.make ble_session/CMakeFiles/ble_session.dir/depend
+	$(MAKE) $(MAKESILENT) -f ble_session/CMakeFiles/ble_session.dir/build.make ble_session/CMakeFiles/ble_session.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num= "Built target ble_session"
+.PHONY : ble_session/CMakeFiles/ble_session.dir/all
+
+# Build rule for subdir invocation for target.
+ble_session/CMakeFiles/ble_session.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 84
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble_session/CMakeFiles/ble_session.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
+.PHONY : ble_session/CMakeFiles/ble_session.dir/rule
+
+# Convenience name for target.
+ble_session: ble_session/CMakeFiles/ble_session.dir/rule
+.PHONY : ble_session
+
+# clean rule for target.
+ble_session/CMakeFiles/ble_session.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ble_session/CMakeFiles/ble_session.dir/build.make ble_session/CMakeFiles/ble_session.dir/clean
+.PHONY : ble_session/CMakeFiles/ble_session.dir/clean
+
+#=============================================================================
 # Target rules for target BLE/CMakeFiles/BLE.dir
 
 # All Build rule for target.
@@ -1099,6 +1178,8 @@ BLE/CMakeFiles/BLE.dir/all: CMakeFiles/uwbdriver.dir/all
 BLE/CMakeFiles/BLE.dir/all: ProjectDefinition/CMakeFiles/ProjectDefinition.dir/all
 BLE/CMakeFiles/BLE.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
 BLE/CMakeFiles/BLE.dir/all: AppFira/CMakeFiles/fira.dir/all
+BLE/CMakeFiles/BLE.dir/all: uci/CMakeFiles/uci.dir/all
+BLE/CMakeFiles/BLE.dir/all: ble_session/CMakeFiles/ble_session.dir/all
 BLE/CMakeFiles/BLE.dir/all: Comm/CMakeFiles/Interface.dir/all
 	$(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/depend
 	$(MAKE) $(MAKESILENT) -f BLE/CMakeFiles/BLE.dir/build.make BLE/CMakeFiles/BLE.dir/build
@@ -1107,7 +1188,7 @@ BLE/CMakeFiles/BLE.dir/all: Comm/CMakeFiles/Interface.dir/all
 
 # Build rule for subdir invocation for target.
 BLE/CMakeFiles/BLE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 91
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 95
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BLE/CMakeFiles/BLE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : BLE/CMakeFiles/BLE.dir/rule
@@ -1148,47 +1229,18 @@ Comm/CMakeFiles/Interface.dir/clean:
 .PHONY : Comm/CMakeFiles/Interface.dir/clean
 
 #=============================================================================
-# Target rules for target uci/CMakeFiles/uci.dir
-
-# All Build rule for target.
-uci/CMakeFiles/uci.dir/all: CMakeFiles/uwbdriver.dir/all
-uci/CMakeFiles/uci.dir/all: ProjectDefinition/CMakeFiles/ProjectDefinition.dir/all
-uci/CMakeFiles/uci.dir/all: Nordic/CMakeFiles/log_rtt.dir/all
-uci/CMakeFiles/uci.dir/all: Comm/CMakeFiles/Interface.dir/all
-	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/depend
-	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=96,97 "Built target uci"
-.PHONY : uci/CMakeFiles/uci.dir/all
-
-# Build rule for subdir invocation for target.
-uci/CMakeFiles/uci.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 81
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uci/CMakeFiles/uci.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
-.PHONY : uci/CMakeFiles/uci.dir/rule
-
-# Convenience name for target.
-uci: uci/CMakeFiles/uci.dir/rule
-.PHONY : uci
-
-# clean rule for target.
-uci/CMakeFiles/uci.dir/clean:
-	$(MAKE) $(MAKESILENT) -f uci/CMakeFiles/uci.dir/build.make uci/CMakeFiles/uci.dir/clean
-.PHONY : uci/CMakeFiles/uci.dir/clean
-
-#=============================================================================
 # Target rules for target SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir
 
 # All Build rule for target.
 SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/all:
 	$(MAKE) $(MAKESILENT) -f SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/build.make SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/depend
 	$(MAKE) $(MAKESILENT) -f SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/build.make SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num=63 "Built target SoftDeviceNrfx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles --progress-num= "Built target SoftDeviceNrfx"
 .PHONY : SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/all
 
 # Build rule for subdir invocation for target.
 SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/engssg/Android_DWM3000/SDK/Firmware/BuildOutput/UCI/FreeRTOS/nRF52840DK/Release/CMakeFiles 0
 .PHONY : SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/rule

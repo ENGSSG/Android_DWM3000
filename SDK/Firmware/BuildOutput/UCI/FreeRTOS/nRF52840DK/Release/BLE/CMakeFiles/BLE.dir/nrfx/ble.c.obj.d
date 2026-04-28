@@ -85,4 +85,12 @@ BLE/CMakeFiles/BLE.dir/nrfx/ble.c.obj: \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/log/nrf_log_types.h \
  /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT.h \
- /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/external/segger_rtt/SEGGER_RTT_Conf.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Src/BLE/nrfx/fff0/ble_fff0.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Src/BLE/../../../../SDK_BSP/Nordic/SDK_17_1_0/components/ble/common/ble_srv_common.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/ble_types.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/softdevice/s113/headers/ble_gatt.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Src/BLE/../../../../SDK_BSP/Nordic/SDK_17_1_0/components/ble/ble_link_ctx_manager/ble_link_ctx_manager.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Src/BLE/../../../../SDK_BSP/Nordic/SDK_17_1_0/components/ble/common/ble_conn_state.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/SDK_17_1_0/components/libraries/atomic/nrf_atomic.h \
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/ble_session/./ble_session.h

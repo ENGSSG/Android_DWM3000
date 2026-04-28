@@ -151,8 +151,10 @@ CMakeFiles/nRF52840DK-UCI-FreeRTOS.elf.dir/home/engssg/Android_DWM3000/SDK/Firmw
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/flushTask/flushTask.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Inc/thisBoard.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Boards/Src/nRF52840DK/Common/custom_board.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/Comm/Inc/comm_helpers.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_cpu.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_error.h
+ /home/engssg/Android_DWM3000/SDK/Firmware/Src/HAL/Inc/HAL_usb.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/circular_buffer.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Helpers/Inc/deca_error.h
  /home/engssg/Android_DWM3000/SDK/Firmware/Src/Logger/log_processing.h

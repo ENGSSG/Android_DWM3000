@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libble_session.a CMakeFiles/ble_session.dir/ble_session.c.obj
+/usr/bin/arm-none-eabi-ranlib libble_session.a

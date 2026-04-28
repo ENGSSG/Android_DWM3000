@@ -260,6 +260,9 @@ LIBS_PATH:UNINITIALIZED=Libs
 MY_TARGET_SCRIPT:UNINITIALIZED=/home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/project_UCI.cmake
 
 //No help, variable specified on the command line.
+PIXEL_UWB_FIRA:UNINITIALIZED=OFF
+
+//No help, variable specified on the command line.
 PROJECT_BASE:UNINITIALIZED=/home/engssg/Android_DWM3000/SDK/Firmware
 
 //No help, variable specified on the command line.
@@ -396,7 +399,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=24
 //objcopy tool
 CMAKE_OBJCOPY:INTERNAL=arm-none-eabi-objcopy
 //ADVANCED property for variable: CMAKE_OBJDUMP

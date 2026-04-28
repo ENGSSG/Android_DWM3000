@@ -3,8 +3,8 @@
 
 set(BLE_SRC_PATH ../../../../SDK_BSP/Nordic/SDK_17_1_0/components/ble)
 
-set(BLE_SRC niq/ble_niq.c nrfx/qnis/ble_qnis.c nrfx/anis/ble_anis.c)
-set(BLE_INC_PATH niq/ nrfx/qnis/ nrfx/anis/)
+set(BLE_SRC niq/ble_niq.c nrfx/qnis/ble_qnis.c nrfx/anis/ble_anis.c nrfx/fff0/ble_fff0.c)
+set(BLE_INC_PATH niq/ nrfx/qnis/ nrfx/anis/ nrfx/fff0/)
 
 add_library(
   BLE
@@ -69,4 +69,4 @@ target_include_directories(
           ${BLE_SRC_PATH}/peer_manager
 )
 
-target_link_libraries(BLE SDK Config uwbstack_core fira niq)
+target_link_libraries(BLE SDK Config uwbstack_core fira niq ble_session)

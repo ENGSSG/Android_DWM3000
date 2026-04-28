@@ -31,6 +31,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/engssg/Android_DWM3000/SDK/Firmware/Projects/FreeRTOS/UCI/nRF52840DK/project_UCI.cmake"
   "/home/engssg/Android_DWM3000/SDK/Firmware/SDK_BSP/Nordic/CMakeLists.txt"
   "/home/engssg/Android_DWM3000/SDK/Firmware/Src/AppConfig/CMakeLists.txt"
+  "/home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/ble_session/CMakeLists.txt"
   "/home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/common/CMakeLists.txt"
   "/home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/fira/CMakeLists.txt"
   "/home/engssg/Android_DWM3000/SDK/Firmware/Src/Apps/Src/reporter/CMakeLists.txt"
@@ -90,9 +91,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "AppFira/CMakeFiles/CMakeDirectoryInformation.cmake"
   "reporter/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Helpers/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "uci/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "ble_session/CMakeFiles/CMakeDirectoryInformation.cmake"
   "BLE/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Comm/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "uci/CMakeFiles/CMakeDirectoryInformation.cmake"
   "SoftDeviceNrfx/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -121,8 +123,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "AppFira/CMakeFiles/fira.dir/DependInfo.cmake"
   "reporter/CMakeFiles/reporter.dir/DependInfo.cmake"
   "Helpers/CMakeFiles/Helpers.dir/DependInfo.cmake"
+  "uci/CMakeFiles/uci.dir/DependInfo.cmake"
+  "ble_session/CMakeFiles/ble_session.dir/DependInfo.cmake"
   "BLE/CMakeFiles/BLE.dir/DependInfo.cmake"
   "Comm/CMakeFiles/Interface.dir/DependInfo.cmake"
-  "uci/CMakeFiles/uci.dir/DependInfo.cmake"
   "SoftDeviceNrfx/CMakeFiles/SoftDeviceNrfx.dir/DependInfo.cmake"
   )

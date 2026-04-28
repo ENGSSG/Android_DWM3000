@@ -20,6 +20,8 @@
 #include "nrf_sdh_freertos.h"
 #include "qlog.h"
 #include "SEGGER_RTT.h"
+#include "ble_fff0.h"
+#include "ble_session.h"
 
 #define APP_BLE_OBSERVER_PRIO 3
 #define APP_BLE_CONN_CFG_TAG 1
@@ -32,8 +34,55 @@
 #define CONN_SUP_TIMEOUT MSEC_TO_UNITS(16000, UNIT_10_MS)
 
 BLE_ADVERTISING_DEF(m_advertising);
+BLE_FFF0_DEF(m_fff0, NRF_SDH_BLE_TOTAL_LINK_COUNT);
+
+static uint16_t m_conn_handle = BLE_CONN_HANDLE_INVALID;
+/* LE encoding of BLE_SESSION_LOCAL_SHORT_ADDR (0x0001). */
+static const uint8_t m_local_uwb_addr[BLE_FFF0_ADDRESS_LEN] = { 0x01, 0x00 };
+
+static ble_uuid_t m_adv_uuids[] = {
+    { BLE_UUID_FFF0_SERVICE, BLE_UUID_TYPE_BLE },
+};
 
 static void advertising_start(void *parm);
+
+static void fff0_event_handler(ble_fff0_evt_t *p_evt)
+{
+    switch (p_evt->type)
+    {
+        case BLE_FFF0_EVT_NOTIFY_ENABLED:
+            QLOGI("FFF0: notifications enabled, conn=0x%04X", p_evt->conn_handle);
+            break;
+
+        case BLE_FFF0_EVT_NOTIFY_DISABLED:
+            QLOGI("FFF0: notifications disabled, conn=0x%04X", p_evt->conn_handle);
+            break;
+
+        case BLE_FFF0_EVT_PARAMS_WRITTEN:
+        {
+            uint16_t len = p_evt->data.params.length;
+            QLOGI("FFF0: %u-byte params received from conn=0x%04X", (unsigned)len, p_evt->conn_handle);
+            /* Echo back the local UWB short address so the central can start ranging. */
+            ret_code_t err = ble_fff0_address_notify(&m_fff0, m_local_uwb_addr, p_evt->conn_handle);
+            if (err != NRF_SUCCESS)
+            {
+                QLOGE("FFF0: address_notify failed err=0x%08lX", (unsigned long)err);
+            }
+            if (len == BLE_SESSION_PARAMS_LEN)
+            {
+                ble_session_submit_params(p_evt->data.params.p_data, p_evt->conn_handle);
+            }
+            else
+            {
+                QLOGE("FFF0: ignoring %u-byte payload (expected %u)", (unsigned)len, (unsigned)BLE_SESSION_PARAMS_LEN);
+            }
+            break;
+        }
+
+        default:
+            break;
+    }
+}
 
 static void rtt_trace(const char *msg)
 {
@@ -74,17 +123,38 @@ static void ble_evt_handler(ble_evt_t const *p_ble_evt, void *p_context)
     switch (p_ble_evt->header.evt_id)
     {
         case BLE_GAP_EVT_CONNECTED:
-            QLOGI("BLE connected");
+            m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
+            QLOGI("BLE connected, handle=0x%04X", m_conn_handle);
             break;
 
         case BLE_GAP_EVT_DISCONNECTED:
+            m_conn_handle = BLE_CONN_HANDLE_INVALID;
             QLOGI("BLE disconnected");
+            /* Do NOT tear down the FiRa session here. The OOB hand-off is
+             * one-shot: the phone closes BLE immediately after writing the
+             * params on FFF1 and starts ranging on its own. Stopping FiRa
+             * here would kill ranging the moment OOB completes. Just resume
+             * advertising so a future peer can re-trigger OOB. */
             advertising_start(NULL);
             break;
 
         default:
             break;
     }
+}
+
+static void services_init(void)
+{
+    ret_code_t err_code;
+    ble_fff0_init_t fff0_init;
+
+    memset(&fff0_init, 0, sizeof(fff0_init));
+    fff0_init.event_handler = fff0_event_handler;
+
+    err_code = ble_fff0_init(&m_fff0, &fff0_init);
+    APP_ERROR_CHECK(err_code);
+    rtt_trace("ble: FFF0 service registered");
+    QLOGI("ble: FFF0 service registered");
 }
 
 static void ble_stack_init(void)
@@ -123,6 +193,8 @@ static void advertising_init(void)
     init.advdata.name_type = BLE_ADVDATA_FULL_NAME;
     init.advdata.include_appearance = false;
     init.advdata.flags = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;
+    init.srdata.uuids_complete.uuid_cnt = sizeof(m_adv_uuids) / sizeof(m_adv_uuids[0]);
+    init.srdata.uuids_complete.p_uuids = m_adv_uuids;
 
     init.config.ble_adv_on_disconnect_disabled = false;
     init.config.ble_adv_fast_enabled = true;
@@ -145,7 +217,12 @@ static void advertising_start(void *parm)
     rtt_trace("ble: advertising_start enter");
     QLOGI("ble: advertising_start");
     err_code = ble_advertising_start(&m_advertising, BLE_ADV_MODE_FAST);
-    APP_ERROR_CHECK(err_code);
+    /* The ble_advertising lib auto-restarts advertising on disconnect, so
+     * INVALID_STATE here just means "already advertising" — not an error. */
+    if (err_code != NRF_SUCCESS && err_code != NRF_ERROR_INVALID_STATE)
+    {
+        APP_ERROR_CHECK(err_code);
+    }
     rtt_trace("ble: advertising_start done");
 }
 
@@ -155,6 +232,8 @@ void ble_init(char *gap_name)
     QLOGI("ble: init begin");
     ble_stack_init();
     gap_params_init(gap_name);
+    services_init();
+    ble_session_init();
     advertising_init();
     rtt_trace("ble: starting freertos helper");
     QLOGI("ble: starting freertos helper");
