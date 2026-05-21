@@ -75,6 +75,7 @@ static struct fira_context m_fira_ctx;
 static uint32_t m_session_handle = 0;
 static bool m_session_started = false;
 static fira_param_t m_fira_param;
+static uint16_t m_local_short_addr = BLE_SESSION_DEFAULT_LOCAL_SHORT_ADDR;
 
 static void ble_session_worker(void *arg);
 static void start_fira(const struct ble_session_params *p);
@@ -117,6 +118,21 @@ void ble_session_init(void)
     }
 
     QLOGI("ble_session: worker ready");
+}
+
+void ble_session_set_local_short_addr(uint16_t short_addr)
+{
+    if (short_addr == 0x0000 || short_addr == 0xFFFF)
+    {
+        short_addr = BLE_SESSION_DEFAULT_LOCAL_SHORT_ADDR;
+    }
+    m_local_short_addr = short_addr;
+    QLOGI("ble_session: local short address=0x%04X", (unsigned)m_local_short_addr);
+}
+
+uint16_t ble_session_get_local_short_addr(void)
+{
+    return m_local_short_addr;
 }
 
 void ble_session_submit_params(const uint8_t payload[BLE_SESSION_PARAMS_LEN], uint16_t conn_handle)
@@ -223,7 +239,7 @@ static void apply_params_to_fira(const struct ble_session_params *p, fira_param_
     memset(fp, 0, sizeof(*fp));
 
     fp->session_id = p->session_id;
-    fp->short_addr = BLE_SESSION_LOCAL_SHORT_ADDR;
+    fp->short_addr = m_local_short_addr;
     fp->config_state = FIRA_APP_CONFIG_DEFAULT;
     fp->app_type = FIRA_APP_RESPF;
 
@@ -253,7 +269,7 @@ static void apply_params_to_fira(const struct ble_session_params *p, fira_param_
     s->channel_number = p->channel;
     s->preamble_code_index = p->preamble;
 
-    s->short_addr = BLE_SESSION_LOCAL_SHORT_ADDR;
+    s->short_addr = m_local_short_addr;
     s->n_destination_short_address = 1;
     s->destination_short_address[0] = p->controller_addr;
 

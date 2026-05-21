@@ -17,14 +17,18 @@
 extern "C" {
 #endif
 
-/** UWB short address this device exposes as the controlee (also echoed on FFF2). */
-#define BLE_SESSION_LOCAL_SHORT_ADDR 0x0001
+/** Fallback UWB short address this device exposes as the controlee. */
+#define BLE_SESSION_DEFAULT_LOCAL_SHORT_ADDR 0x0001
 
 /** Length of the FFF1 OOB payload, fixed by the contract. */
 #define BLE_SESSION_PARAMS_LEN 16
 
 /** One-time init: spawn the worker task. Call from ble_init() after services_init(). */
 void ble_session_init(void);
+
+/** Set/read the local UWB short address echoed on FFF2 and used in FiRa params. */
+void ble_session_set_local_short_addr(uint16_t short_addr);
+uint16_t ble_session_get_local_short_addr(void);
 
 /**
  * Hand off a freshly-received FFF1 payload to the worker.

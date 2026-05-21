@@ -37,14 +37,56 @@ BLE_ADVERTISING_DEF(m_advertising);
 BLE_FFF0_DEF(m_fff0, NRF_SDH_BLE_TOTAL_LINK_COUNT);
 
 static uint16_t m_conn_handle = BLE_CONN_HANDLE_INVALID;
-/* LE encoding of BLE_SESSION_LOCAL_SHORT_ADDR (0x0001). */
-static const uint8_t m_local_uwb_addr[BLE_FFF0_ADDRESS_LEN] = { 0x01, 0x00 };
+/* LE encoding of the board-local UWB short address echoed on FFF2. */
+static uint8_t m_local_uwb_addr[BLE_FFF0_ADDRESS_LEN] = { 0x01, 0x00 };
 
 static ble_uuid_t m_adv_uuids[] = {
     { BLE_UUID_FFF0_SERVICE, BLE_UUID_TYPE_BLE },
 };
 
 static void advertising_start(void *parm);
+
+static uint16_t derive_uwb_short_addr(ble_gap_addr_t const *gap_addr)
+{
+    uint16_t h = 0xA5A5u;
+    for (uint8_t i = 0; i < BLE_GAP_ADDR_LEN; i++)
+    {
+        h ^= gap_addr->addr[i];
+        h = (uint16_t)((h << 5) | (h >> 11));
+        h = (uint16_t)(h + 0x9E37u);
+    }
+
+    if (h == 0x0000 || h == 0xFFFF)
+    {
+        h ^= 0x0101u;
+    }
+    return h;
+}
+
+static void local_uwb_address_init(void)
+{
+    ble_gap_addr_t gap_addr;
+    ret_code_t err = sd_ble_gap_addr_get(&gap_addr);
+    uint16_t short_addr = BLE_SESSION_DEFAULT_LOCAL_SHORT_ADDR;
+
+    if (err == NRF_SUCCESS)
+    {
+        short_addr = derive_uwb_short_addr(&gap_addr);
+    }
+    else
+    {
+        QLOGE("ble: sd_ble_gap_addr_get failed err=0x%08lX; using default short address",
+              (unsigned long)err);
+    }
+
+    ble_session_set_local_short_addr(short_addr);
+    m_local_uwb_addr[0] = (uint8_t)(short_addr & 0xFFu);
+    m_local_uwb_addr[1] = (uint8_t)(short_addr >> 8);
+    QLOGI("ble: local UWB short address=0x%04X (FFF2=%02X%02X)",
+          (unsigned)short_addr,
+          (unsigned)m_local_uwb_addr[0],
+          (unsigned)m_local_uwb_addr[1]);
+}
 
 static void fff0_event_handler(ble_fff0_evt_t *p_evt)
 {
@@ -231,6 +273,7 @@ void ble_init(char *gap_name)
     rtt_trace("ble: init begin");
     QLOGI("ble: init begin");
     ble_stack_init();
+    local_uwb_address_init();
     gap_params_init(gap_name);
     services_init();
     ble_session_init();

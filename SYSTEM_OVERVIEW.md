@@ -93,10 +93,11 @@ Encoded by `UwbSessionParams.toByteArray()` in
 | 14 | 2 | `peerAddress` | Phone's local UWB short address (= the board's destination). |
 
 ### FFF2 — 2 bytes
-Single notification. Board returns `BLE_SESSION_LOCAL_SHORT_ADDR = 0x0001`
-encoded little-endian as `01 00` (`m_local_uwb_addr` in `ble.c:41`). Phone
-uses this to construct `UwbAddress` for the `peerDevices` list passed to
-`RangingParameters`.
+Single notification. Board returns its local UWB short address encoded
+little-endian (`m_local_uwb_addr` in `ble.c`). The firmware derives this
+short address from the board's BLE GAP address at boot so multiple boards do
+not all report the same `0x0001` address. Phone uses this to construct
+`UwbAddress` entries for the `peerDevices` list passed to `RangingParameters`.
 
 ## 4. Pre-shared FiRa parameters (NOT in the OOB payload)
 
