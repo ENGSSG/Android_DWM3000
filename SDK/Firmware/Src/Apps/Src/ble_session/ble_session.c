@@ -77,10 +77,21 @@ static bool m_session_started = false;
 static fira_param_t m_fira_param;
 static uint16_t m_local_short_addr = BLE_SESSION_DEFAULT_LOCAL_SHORT_ADDR;
 
+/* Optional sink for the per-round NLOS/link-quality record. Registered by the
+ * BLE transport layer (ble.c); left NULL until then. */
+static ble_session_link_quality_sink_t m_link_quality_sink = NULL;
+static uint8_t m_link_quality_seq = 0;
+
 static void ble_session_worker(void *arg);
 static void start_fira(const struct ble_session_params *p);
 static void stop_fira(void);
 static void fira_notification_cb(enum fira_helper_cb_type cb_type, const void *content, void *user_data);
+static void emit_link_quality(const struct diagnostic_info *di);
+
+void ble_session_register_link_quality_sink(ble_session_link_quality_sink_t sink)
+{
+    m_link_quality_sink = sink;
+}
 
 static void decode_oob_payload(const uint8_t *p, struct ble_session_params *out)
 {
@@ -300,6 +311,14 @@ static void apply_params_to_fira(const struct ble_session_params *p, fira_param_
     s->result_report_config |= fira_helper_bool_to_result_report_config(true, true, true, true);
     s->ranging_round_control |= fira_helper_bool_to_ranging_round_control(true, false);
 
+    /* Enable per-round diagnostics so the RX segment metrics (RSL, first-path
+     * RSL, noise) are produced and attached to the range NTF. These feed the
+     * NLOS/link-quality record streamed to the phone (see emit_link_quality).
+     * fira_set_session_parameters() forwards both flags and already requests
+     * the SEGMENT_METRICS frame-report fields. */
+    s->enable_diagnostics = true;
+    s->report_rssi = true;
+
     fp->controlees_params.n_controlees = 0;
 }
 
@@ -460,6 +479,103 @@ deinit_mcps:
     m_uwbmac_ctx = NULL;
 }
 
+/* Clamp a float to [0, 1]. */
+static inline float clamp01(float v)
+{
+    if (v < 0.0f)
+        return 0.0f;
+    if (v > 1.0f)
+        return 1.0f;
+    return v;
+}
+
+/* Pack a non-negative float into a byte (clamped 0..255). */
+static inline uint8_t clamp_u8(float v)
+{
+    if (v < 0.0f)
+        v = 0.0f;
+    if (v > 255.0f)
+        v = 255.0f;
+    return (uint8_t)(v + 0.5f);
+}
+
+/*
+ * Derive a compact NLOS/link-quality record from a ranging round's RX
+ * diagnostics and hand it to the registered sink (FFF3 notifier). Uses the
+ * first RX frame report carrying segment metrics — for this Responder that is
+ * the device's reception of the Controller's frame, whose first-path
+ * attenuation is the body-occlusion signal we want.
+ *
+ * Sign/scale conventions match the UCI stack (see qorvo_msg.py):
+ *   rsl_dbm    = -(rsl_q8    / 256)
+ *   fp_rsl_dbm = -(fp_rsl_q8 / 256)
+ *   noise_value is in dBm. First-path power <= total power, so
+ *   fp_gap_db = rsl_dbm - fp_rsl_dbm = (fp_rsl_q8 - rsl_q8) / 256 >= 0.
+ */
+static void emit_link_quality(const struct diagnostic_info *di)
+{
+    if ((m_link_quality_sink == NULL) || (di == NULL))
+        return;
+
+    const struct frame_report *report = di->reports;
+    const struct segment_metrics *seg = NULL;
+    const struct frame_report *chosen = NULL;
+
+    for (uint32_t i = 0; (report != NULL) && (i < di->nb_reports); i++)
+    {
+        /* action 0 == RX. */
+        if ((report->action == 0) && (report->nb_seg_metrics > 0) && (report->seg_metrics != NULL))
+        {
+            seg = report->seg_metrics;
+            chosen = report;
+            break;
+        }
+        report = report->next;
+    }
+
+    ble_session_link_quality_t lq;
+    memset(&lq, 0, sizeof(lq));
+    lq.seq = m_link_quality_seq++;
+
+    if ((seg != NULL) && (chosen != NULL))
+    {
+        float rsl_dbm = -((float)seg->rsl_q8 / 256.0f);
+        float fp_rsl_dbm = -((float)seg->fp_rsl_q8 / 256.0f);
+        float noise_dbm = (float)seg->noise_value;
+        float fp_gap_db = rsl_dbm - fp_rsl_dbm; /* >= 0 in normal conditions */
+        if (fp_gap_db < 0.0f)
+            fp_gap_db = 0.0f;
+        float snr_db = rsl_dbm - noise_dbm;
+
+        /* First-path gap is the dominant NLOS indicator: a large gap means the
+         * direct path is buried under reflected energy (occlusion). */
+        const float GAP_LO_DB = 2.0f;  /* clean LOS */
+        const float GAP_HI_DB = 14.0f; /* heavily occluded */
+        float gap_term = clamp01((fp_gap_db - GAP_LO_DB) / (GAP_HI_DB - GAP_LO_DB));
+
+        /* A weak overall link is itself a sign of body occlusion; secondary term. */
+        const float SNR_GOOD_DB = 12.0f;
+        const float SNR_BAD_DB = 3.0f;
+        float snr_term = clamp01((SNR_GOOD_DB - snr_db) / (SNR_GOOD_DB - SNR_BAD_DB));
+
+        float nlos = 0.75f * gap_term + 0.25f * snr_term;
+
+        lq.nlos_score = clamp_u8(nlos * 255.0f);
+        lq.rsl_q1 = clamp_u8((-rsl_dbm) * 2.0f); /* |RSL| in 0.5 dB units */
+        lq.fp_gap_q1 = clamp_u8(fp_gap_db * 2.0f);
+        lq.flags |= BLE_SESSION_LQ_FLAG_VALID;
+        if (chosen->extra_status & FIRA_RANGING_DIAGNOSTICS_FRAME_REPORTS_STATUS_FLAGS_SUCCESS)
+            lq.flags |= BLE_SESSION_LQ_FLAG_SUCCESS;
+        if ((chosen->nb_aoa > 0) && (chosen->aoas != NULL))
+        {
+            lq.aoa_fom = chosen->aoas->fom;
+            lq.flags |= BLE_SESSION_LQ_FLAG_AOA_PRESENT;
+        }
+    }
+
+    m_link_quality_sink((const uint8_t *)&lq, (uint16_t)sizeof(lq));
+}
+
 static void fira_notification_cb(enum fira_helper_cb_type cb_type, const void *content, void *user_data)
 {
     (void)user_data;
@@ -483,6 +599,13 @@ static void fira_notification_cb(enum fira_helper_cb_type cb_type, const void *c
             QLOGI("ble_session: range peer=0x%04X status=%u",
                   (unsigned)rm->short_addr, (unsigned)rm->status);
         }
+    }
+
+    /* Best-effort: derive and stream the compact NLOS/link-quality record from
+     * the per-round diagnostics attached to this range NTF. */
+    if (results->info != NULL)
+    {
+        emit_link_quality(results->info->diagnostic);
     }
 }
 

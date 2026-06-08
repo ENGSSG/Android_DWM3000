@@ -42,6 +42,42 @@ void ble_session_submit_params(const uint8_t payload[BLE_SESSION_PARAMS_LEN], ui
  */
 void ble_session_submit_disconnect(void);
 
+/**
+ * Compact per-round NLOS / link-quality record, computed from the RX
+ * segment-metric diagnostics of the FiRa ranging round and streamed verbatim
+ * (little-endian, packed) to the phone over the BLE FFF3 characteristic. The
+ * host tracker uses it to make its face<->UWB association NLOS-aware: a
+ * body-occluded back-pocket tag shows a large first-path gap and low SNR.
+ * Keep this layout in sync with the Android parser (BleCentral / LinkQuality).
+ */
+#define BLE_SESSION_LINK_QUALITY_LEN 6
+typedef struct __attribute__((packed))
+{
+    uint8_t nlos_score; /**< 0 = clean LOS .. 255 = heavy NLOS / occluded. */
+    uint8_t rsl_q1;     /**< |RSL| in 0.5 dB units, clamped 0..255. */
+    uint8_t fp_gap_q1;  /**< (RSL - first-path RSL) gap in 0.5 dB units; large => NLOS. */
+    uint8_t aoa_fom;    /**< AoA figure of merit (raw, 0 if absent). */
+    uint8_t seq;        /**< Wrapping per-record sequence for loss detection. */
+    uint8_t flags;      /**< bit0 valid, bit1 status_success, bit2 aoa_present. */
+} ble_session_link_quality_t;
+
+#define BLE_SESSION_LQ_FLAG_VALID (1u << 0)
+#define BLE_SESSION_LQ_FLAG_SUCCESS (1u << 1)
+#define BLE_SESSION_LQ_FLAG_AOA_PRESENT (1u << 2)
+
+/**
+ * Link-quality sink. The FiRa worker hands the raw BLE_SESSION_LINK_QUALITY_LEN
+ * bytes to the registered sink once per ranging round (when diagnostics are
+ * enabled). The sink runs in the FiRa notification context, so it MUST be
+ * non-blocking (e.g. a single best-effort BLE notify, dropped if the TX queue
+ * is full). NULL clears the sink; when none is registered no work is done.
+ *
+ * Inverted dependency: the BLE transport layer (ble.c) depends on this module,
+ * so it registers its FFF3 notifier here rather than being called directly.
+ */
+typedef void (*ble_session_link_quality_sink_t)(const uint8_t *payload, uint16_t len);
+void ble_session_register_link_quality_sink(ble_session_link_quality_sink_t sink);
+
 #ifdef __cplusplus
 }
 #endif

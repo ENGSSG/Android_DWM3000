@@ -1,2 +1,2 @@
-/usr/bin/arm-none-eabi-ar qc liblogger.a CMakeFiles/logger.dir/log_processing.c.obj
-/usr/bin/arm-none-eabi-ranlib liblogger.a
+ccache /usr/bin/arm-none-eabi-ar qc liblogger.a CMakeFiles/logger.dir/log_processing.c.obj
+ccache /usr/bin/arm-none-eabi-ranlib liblogger.a

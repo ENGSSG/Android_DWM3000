@@ -1,0 +1,74 @@
+// Per-person entry/exit protocol for the UWB-tag face-blur system.
+// Source of truth: DWM3000_Android_tracker FacePredictionTracker.kt (OwnerLockState).
+// Render: dot -Tsvg entry_exit_protocol.dot -o entry_exit_protocol.svg
+//         dot -Tpng -Gdpi=140 entry_exit_protocol.dot -o entry_exit_protocol.png
+digraph EntryExitProtocol {
+    rankdir=TB;
+    bgcolor="white";
+    fontname="Helvetica";
+    fontsize=16;
+    labelloc="t";
+    label="UWB-Tag Face-Blur — Per-Person Entry / Exit Protocol";
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#607D8B"];
+    edge [fontname="Helvetica", fontsize=9, color="#455A64"];
+
+    start  [shape=point, width=0.16, color="#263238"];
+    end    [shape=doublecircle, width=0.14, label="", color="#263238", fillcolor="#263238"];
+
+    // Non-blur states (gray)
+    IDLE        [fillcolor="#ECEFF1", label="IDLE\nno face bound"];
+    PENDING     [fillcolor="#ECEFF1", label="PENDING\nDETECTION\ngathering UWB↔face evidence"];
+    CONFIRMING  [fillcolor="#ECEFF1", label="CONFIRMING\nCONFIRMATION\nfalse-positive filter"];
+    EXITED      [fillcolor="#ECEFF1", label="EXITED\nlock removed"];
+
+    // Blur ON — confirmed / coasting (red)
+    CONFIRMED   [fillcolor="#FFCDD2", label="CONFIRMED\nTRACKING — blur ON"];
+    COASTING    [fillcolor="#FFCDD2", label="COASTING\nUWB lost — blur ON\n(grace window)"];
+
+    // Blur ON — visual recovery (amber)
+    VISUAL_LOST [fillcolor="#FFE0B2", label="VISUAL_LOST\nface occluded — blur ON"];
+    REACQUIRING [fillcolor="#FFE0B2", label="REACQUIRING\nblur ON"];
+
+    // --- Entry path ---
+    start      -> IDLE;
+    IDLE       -> PENDING    [label="UWB live + faces present"];
+    PENDING    -> CONFIRMING [label="best match passes\ncost / margin / ≥MIN_ASSOCIATION_PAIRS"];
+    CONFIRMING -> PENDING    [label="candidate destabilizes"];
+    CONFIRMING -> CONFIRMED  [label="stable × ENTRY_CONFIRM_FRAMES (3)\n→ ENTRY CONFIRMED, blur turns ON"];
+
+    // --- Tracking & camera-occlusion recovery (UWB still live) ---
+    CONFIRMED   -> VISUAL_LOST [label="bound face occluded"];
+    VISUAL_LOST -> REACQUIRING [label="candidate stable"];
+    REACQUIRING -> CONFIRMED   [label="× REACQUIRE_CONFIRM_FRAMES (3)"];
+    REACQUIRING -> VISUAL_LOST [label="candidate lost"];
+    VISUAL_LOST -> CONFIRMED   [label="same track reappears"];
+
+    // --- Exit path: UWB dropout -> coast -> remove ---
+    CONFIRMED   -> COASTING [label="UWB dropout\n(peer leaves live set)"];
+    VISUAL_LOST -> COASTING [label="UWB dropout"];
+    REACQUIRING -> COASTING [label="UWB dropout"];
+    COASTING    -> CONFIRMED   [label="UWB resumes\n(face present)"];
+    COASTING    -> VISUAL_LOST [label="UWB resumes\n(face gone)"];
+    COASTING    -> EXITED   [label="coast age > UWB_LOSS_GRACE_NS (2 s)\n→ EXIT"];
+
+    // Unconfirmed peers exit immediately (never blurred)
+    PENDING    -> EXITED [label="UWB dropout\n(never confirmed)"];
+    CONFIRMING -> EXITED [label="UWB dropout\n(never confirmed)"];
+
+    EXITED -> end;
+    // Re-identification: fast re-lock if the same peer returns soon
+    EXITED -> PENDING [style=dashed, color="#1565C0", fontcolor="#1565C0", constraint=false,
+                       label="re-entry < REID_MEMORY_NS (5 s)\nseed offset, REID_CONFIRM_FRAMES (1)"];
+
+    // --- Legend ---
+    subgraph cluster_legend {
+        label="Legend (fill = blur state)";
+        style="rounded"; color="#90A4AE"; fontsize=10;
+        node [shape=box, style="rounded,filled", fontsize=9];
+        L0 [label="no blur", fillcolor="#ECEFF1"];
+        L1 [label="blur ON — confirmed / coasting", fillcolor="#FFCDD2"];
+        L2 [label="blur ON — visual recovery", fillcolor="#FFE0B2"];
+        L0 -> L1 [style=invis];
+        L1 -> L2 [style=invis];
+    }
+}

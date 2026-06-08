@@ -314,6 +314,15 @@ def main():
         default=False,
         help="when used with --compact, print compact output as CSV with a header. (default: %(default)s)",
     )
+    parser.add_argument(
+        "--slot-log",
+        action="store_true",
+        default=False,
+        help="print round/slot timing diagnostics for each RANGE_DATA_NTF. "
+        "The UWB device clock is sampled after ranging_start and then estimated "
+        "from host monotonic time for each notification; RANGE_DATA_NTF itself "
+        "does not carry a per-frame DW timestamp.",
+    )
 
     opts = parser.parse_args()
 
@@ -361,6 +370,8 @@ def main():
     if opts.diag_dump:
         opts.en_diag = True
         opts.stats = True
+    if opts.slot_log:
+        opts.en_diag = True
 
     args = type("args", (), {})()
     args.__dict__.update(default_config)
@@ -444,6 +455,111 @@ def main():
 
     compact_distance_samples_cm = []
     compact_csv_header_printed = False
+    slot_log_start_ns = None
+    slot_log_prev_ns = None
+    slot_log_prev_idx = None
+    slot_log_device_anchor_us = None
+    slot_log_host_anchor_ns = None
+
+    def set_slot_log_anchor(client):
+        nonlocal slot_log_device_anchor_us, slot_log_host_anchor_ns
+
+        slot_log_host_anchor_ns = time.monotonic_ns()
+        try:
+            status, device_time_us = client.get_time()
+        except Exception as exp:
+            print(f"slot-log-anchor device_time_us=na error={exp}")
+            return
+
+        if status == Status.Ok:
+            slot_log_device_anchor_us = device_time_us
+            print(f"slot-log-anchor device_time_us={device_time_us}")
+        else:
+            print(f"slot-log-anchor device_time_us=na status={status.name}({status.value})")
+
+    def format_slot_log(decoded_ntf):
+        nonlocal slot_log_start_ns, slot_log_prev_ns, slot_log_prev_idx
+
+        now_ns = time.monotonic_ns()
+        if slot_log_start_ns is None:
+            slot_log_start_ns = now_ns
+
+        elapsed_ms = (now_ns - slot_log_start_ns) / 1_000_000.0
+        delta_ms = None if slot_log_prev_ns is None else (now_ns - slot_log_prev_ns) / 1_000_000.0
+        seq_delta = None if slot_log_prev_idx is None else decoded_ntf.idx - slot_log_prev_idx
+        round_ms = decoded_ntf.ranging_interval
+        slot_ms = args.slot_span / 1200.0
+        slots_per_rr = args.slots_per_rr
+        phase_ms = elapsed_ms % round_ms if round_ms else 0.0
+        phase_slot = int(phase_ms // slot_ms) if slot_ms else 0
+        device_time_us = None
+        device_elapsed_ms = None
+        device_phase_ms = None
+        device_phase_slot = None
+        device_round_idx = None
+
+        if slot_log_device_anchor_us is not None and slot_log_host_anchor_ns is not None:
+            device_elapsed_ms = (now_ns - slot_log_host_anchor_ns) / 1_000_000.0
+            device_time_us = slot_log_device_anchor_us + int(device_elapsed_ms * 1000)
+            if round_ms:
+                device_round_idx = int(device_elapsed_ms // round_ms)
+                device_phase_ms = device_elapsed_ms % round_ms
+                device_phase_slot = int(device_phase_ms // slot_ms) if slot_ms else 0
+
+        slot_log_prev_ns = now_ns
+        slot_log_prev_idx = decoded_ntf.idx
+
+        lines = [
+            "slot-log "
+            f"host_elapsed_ms={elapsed_ms:.3f} "
+            f"delta_ms={'na' if delta_ms is None else f'{delta_ms:.3f}'} "
+            f"seq={decoded_ntf.idx} "
+            f"seq_delta={'na' if seq_delta is None else seq_delta} "
+            f"session={decoded_ntf.session_handle} "
+            f"round_ms={round_ms} "
+            f"slot_ms={slot_ms:.3f} "
+            f"slots_per_rr={slots_per_rr} "
+            f"host_phase_ms={phase_ms:.3f} "
+            f"host_phase_slot~={phase_slot} "
+            f"uwb_time_est_us={'na' if device_time_us is None else device_time_us} "
+            f"uwb_elapsed_ms={'na' if device_elapsed_ms is None else f'{device_elapsed_ms:.3f}'} "
+            f"uwb_round_idx~={'na' if device_round_idx is None else device_round_idx} "
+            f"uwb_phase_ms={'na' if device_phase_ms is None else f'{device_phase_ms:.3f}'} "
+            f"uwb_phase_slot~={'na' if device_phase_slot is None else device_phase_slot}"
+        ]
+
+        for meas in decoded_ntf.meas:
+            slot_in_error = getattr(meas, "slot_in_error", None)
+            fields = [
+                f"meas={getattr(meas, 'meas_n', 'na')}",
+                f"mac={getattr(meas, 'mac_add', 'na')}",
+                f"status={getattr(getattr(meas, 'status', None), 'name', getattr(meas, 'status', 'na'))}",
+                f"slot_in_error={'na' if slot_in_error is None else slot_in_error}",
+                f"distance_cm={getattr(meas, 'distance', 'na')}",
+                f"rssi_dbm={getattr(meas, 'rssi', 'na')}",
+            ]
+            lines.append("slot-log-meas " + " ".join(fields))
+
+        return "\n".join(lines)
+
+    def format_slot_diag_log(decoded_diag):
+        lines = [
+            "slot-diag "
+            f"session={decoded_diag.session_handle} "
+            f"seq={decoded_diag.sequence_n} "
+            f"reports={decoded_diag.n_reports}"
+        ]
+        for report in decoded_diag.reports:
+            lines.append(
+                "slot-diag-frame "
+                f"seq={decoded_diag.sequence_n} "
+                f"report={report.report_n} "
+                f"msg={getattr(report.msg_id, 'name', report.msg_id)} "
+                f"action={getattr(report.action, 'name', report.action)} "
+                f"antenna_set={report.antenna_set} "
+                f"fields={report.n_fields}"
+            )
+        return "\n".join(lines)
 
     def get_compact_stats_samples():
         if opts.trim_outliers <= 0:
@@ -533,6 +649,8 @@ def main():
                 ntf_message = format_compact_ranging_ntf(decoded_ntf)
             else:
                 ntf_message = f"{decoded_ntf}"
+            if opts.slot_log:
+                ntf_message = f"{ntf_message}\n{format_slot_log(decoded_ntf)}"
 
         print(ntf_message)
 
@@ -540,7 +658,9 @@ def main():
         r = RangingDiagData(payload)
         if diag_ntf_queue is not None:
             diag_ntf_queue.put(r)
-        if not opts.compact:
+        if opts.slot_log:
+            print(format_slot_diag_log(r))
+        elif not opts.compact:
             print(r)
 
     if opts.compact or opts.stats or opts.en_diag:
@@ -653,6 +773,8 @@ def main():
                 print(f"ranging_start failed: {rts.name} ({rts})")
                 client.session_deinit(session_handle)
                 break
+            if opts.slot_log:
+                set_slot_log_anchor(client)
 
             if args.time == -1:
                 input("Press <RETURN> to stop\n")

@@ -28,6 +28,7 @@ static void on_connect(ble_fff0_t *p_fff0, ble_evt_t const *p_ble_evt)
     if (p_client != NULL)
     {
         p_client->is_notification_enabled = false;
+        p_client->is_quality_notification_enabled = false;
     }
 }
 
@@ -59,6 +60,23 @@ static void on_write(ble_fff0_t *p_fff0, ble_evt_t const *p_ble_evt)
             bool enabled = ble_srv_is_notification_enabled(p_evt_write->data);
             p_client->is_notification_enabled = enabled;
             evt.type = enabled ? BLE_FFF0_EVT_NOTIFY_ENABLED : BLE_FFF0_EVT_NOTIFY_DISABLED;
+
+            if (p_fff0->event_handler != NULL)
+            {
+                p_fff0->event_handler(&evt);
+            }
+        }
+        return;
+    }
+
+    /* CCCD on FFF3 (link-quality notify) */
+    if ((p_evt_write->handle == p_fff0->quality_handles.cccd_handle) && (p_evt_write->len == 2))
+    {
+        if (p_client != NULL)
+        {
+            bool enabled = ble_srv_is_notification_enabled(p_evt_write->data);
+            p_client->is_quality_notification_enabled = enabled;
+            evt.type = enabled ? BLE_FFF0_EVT_QUALITY_NOTIFY_ENABLED : BLE_FFF0_EVT_QUALITY_NOTIFY_DISABLED;
 
             if (p_fff0->event_handler != NULL)
             {
@@ -147,7 +165,22 @@ uint32_t ble_fff0_init(ble_fff0_t *p_fff0, ble_fff0_init_t const *p_init)
     add_char_params.write_access = SEC_OPEN;
     add_char_params.cccd_write_access = SEC_OPEN;
 
-    return characteristic_add(p_fff0->service_handle, &add_char_params, &p_fff0->resp_handles);
+    err_code = characteristic_add(p_fff0->service_handle, &add_char_params, &p_fff0->resp_handles);
+    VERIFY_SUCCESS(err_code);
+
+    /* FFF3: notify — periodic NLOS/link-quality record streamed during ranging. */
+    memset(&add_char_params, 0, sizeof(add_char_params));
+    add_char_params.uuid = BLE_UUID_FFF3_QUALITY_CHAR;
+    add_char_params.uuid_type = BLE_UUID_TYPE_BLE;
+    add_char_params.max_len = BLE_FFF0_QUALITY_LEN;
+    add_char_params.init_len = 0;
+    add_char_params.is_var_len = true;
+    add_char_params.char_props.notify = 1;
+    add_char_params.read_access = SEC_OPEN;
+    add_char_params.write_access = SEC_OPEN;
+    add_char_params.cccd_write_access = SEC_OPEN;
+
+    return characteristic_add(p_fff0->service_handle, &add_char_params, &p_fff0->quality_handles);
 }
 
 uint32_t ble_fff0_address_notify(ble_fff0_t *p_fff0, uint8_t const *address, uint16_t conn_handle)
@@ -176,6 +209,38 @@ uint32_t ble_fff0_address_notify(ble_fff0_t *p_fff0, uint8_t const *address, uin
     memset(&hvx_params, 0, sizeof(hvx_params));
     hvx_params.handle = p_fff0->resp_handles.value_handle;
     hvx_params.p_data = address;
+    hvx_params.p_len = &length;
+    hvx_params.type = BLE_GATT_HVX_NOTIFICATION;
+
+    return sd_ble_gatts_hvx(conn_handle, &hvx_params);
+}
+
+uint32_t ble_fff0_quality_notify(ble_fff0_t *p_fff0, uint8_t const *payload, uint16_t len, uint16_t conn_handle)
+{
+    ret_code_t err_code;
+    ble_gatts_hvx_params_t hvx_params;
+    ble_fff0_client_context_t *p_client = NULL;
+    uint16_t length = len;
+
+    VERIFY_PARAM_NOT_NULL(p_fff0);
+    VERIFY_PARAM_NOT_NULL(payload);
+
+    err_code = blcm_link_ctx_get(p_fff0->p_link_ctx_storage, conn_handle, (void *)&p_client);
+    VERIFY_SUCCESS(err_code);
+
+    if ((conn_handle == BLE_CONN_HANDLE_INVALID) || (p_client == NULL))
+    {
+        return NRF_ERROR_NOT_FOUND;
+    }
+
+    if (!p_client->is_quality_notification_enabled)
+    {
+        return NRF_ERROR_INVALID_STATE;
+    }
+
+    memset(&hvx_params, 0, sizeof(hvx_params));
+    hvx_params.handle = p_fff0->quality_handles.value_handle;
+    hvx_params.p_data = payload;
     hvx_params.p_len = &length;
     hvx_params.type = BLE_GATT_HVX_NOTIFICATION;
 

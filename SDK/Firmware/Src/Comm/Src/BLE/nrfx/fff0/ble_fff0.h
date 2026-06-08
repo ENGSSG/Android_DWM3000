@@ -26,9 +26,11 @@
 #define BLE_UUID_FFF0_SERVICE      0xFFF0
 #define BLE_UUID_FFF1_PARAMS_CHAR  0xFFF1
 #define BLE_UUID_FFF2_RESP_CHAR    0xFFF2
+#define BLE_UUID_FFF3_QUALITY_CHAR 0xFFF3
 
 #define BLE_FFF0_PARAMS_LEN        16
 #define BLE_FFF0_ADDRESS_LEN       2
+#define BLE_FFF0_QUALITY_LEN       6
 
 #ifndef BLE_FFF0_BLE_OBSERVER_PRIO
 #define BLE_FFF0_BLE_OBSERVER_PRIO 2
@@ -42,16 +44,19 @@
 
 typedef enum
 {
-    BLE_FFF0_EVT_PARAMS_WRITTEN,    /**< 16-byte params payload received on FFF1. */
-    BLE_FFF0_EVT_NOTIFY_ENABLED,    /**< Peer enabled CCCD on FFF2. */
-    BLE_FFF0_EVT_NOTIFY_DISABLED,   /**< Peer disabled CCCD on FFF2. */
+    BLE_FFF0_EVT_PARAMS_WRITTEN,        /**< 16-byte params payload received on FFF1. */
+    BLE_FFF0_EVT_NOTIFY_ENABLED,        /**< Peer enabled CCCD on FFF2. */
+    BLE_FFF0_EVT_NOTIFY_DISABLED,       /**< Peer disabled CCCD on FFF2. */
+    BLE_FFF0_EVT_QUALITY_NOTIFY_ENABLED,  /**< Peer enabled CCCD on FFF3. */
+    BLE_FFF0_EVT_QUALITY_NOTIFY_DISABLED, /**< Peer disabled CCCD on FFF3. */
 } ble_fff0_evt_type_t;
 
 typedef struct ble_fff0_s ble_fff0_t;
 
 typedef struct
 {
-    bool is_notification_enabled;
+    bool is_notification_enabled;          /**< FFF2 (address) notifications. */
+    bool is_quality_notification_enabled;  /**< FFF3 (link-quality) notifications. */
 } ble_fff0_client_context_t;
 
 typedef struct
@@ -84,6 +89,7 @@ struct ble_fff0_s
     uint16_t service_handle;
     ble_gatts_char_handles_t params_handles;            /**< FFF1 (write). */
     ble_gatts_char_handles_t resp_handles;              /**< FFF2 (notify). */
+    ble_gatts_char_handles_t quality_handles;           /**< FFF3 (notify). */
     blcm_link_ctx_storage_t *const p_link_ctx_storage;
     ble_fff0_event_handler_t event_handler;
 };
@@ -102,3 +108,11 @@ void ble_fff0_on_ble_evt(ble_evt_t const *p_ble_evt, void *p_context);
  * Send the 2-byte UWB short address as an FFF2 notification.
  */
 uint32_t ble_fff0_address_notify(ble_fff0_t *p_fff0, uint8_t const *address, uint16_t conn_handle);
+
+/**
+ * Send a link-quality record (BLE_FFF0_QUALITY_LEN bytes) as an FFF3
+ * notification. Best-effort: returns NRF_ERROR_INVALID_STATE if the peer has
+ * not subscribed, or NRF_ERROR_RESOURCES if the SoftDevice TX queue is full
+ * (the caller should drop the sample rather than retry/block).
+ */
+uint32_t ble_fff0_quality_notify(ble_fff0_t *p_fff0, uint8_t const *payload, uint16_t len, uint16_t conn_handle);

@@ -1,0 +1,37 @@
+%% Per-person entry/exit protocol — UWB-tag face-blur system.
+%% Source of truth: DWM3000_Android_tracker FacePredictionTracker.kt (OwnerLockState).
+%% Blur ON: CONFIRMED, VISUAL_LOST, REACQUIRING, COASTING.
+stateDiagram-v2
+    [*] --> IDLE
+
+    IDLE --> PENDING: UWB live + faces present
+    PENDING --> CONFIRMING: best match passes cost / margin / >=MIN_ASSOCIATION_PAIRS
+    CONFIRMING --> PENDING: candidate destabilizes
+    CONFIRMING --> CONFIRMED: stable x ENTRY_CONFIRM_FRAMES (3) -> blur ON
+
+    CONFIRMED --> VISUAL_LOST: bound face occluded (UWB live)
+    VISUAL_LOST --> REACQUIRING: candidate stable
+    REACQUIRING --> CONFIRMED: x REACQUIRE_CONFIRM_FRAMES (3)
+    REACQUIRING --> VISUAL_LOST: candidate lost
+    VISUAL_LOST --> CONFIRMED: same track reappears
+
+    CONFIRMED --> COASTING: UWB dropout (peer leaves live set)
+    VISUAL_LOST --> COASTING: UWB dropout
+    REACQUIRING --> COASTING: UWB dropout
+    COASTING --> CONFIRMED: UWB resumes (face present)
+    COASTING --> VISUAL_LOST: UWB resumes (face gone)
+    COASTING --> EXITED: coast age > UWB_LOSS_GRACE_NS (2 s)
+
+    PENDING --> EXITED: UWB dropout (never confirmed)
+    CONFIRMING --> EXITED: UWB dropout (never confirmed)
+    EXITED --> PENDING: re-entry < REID_MEMORY_NS (5 s), REID_CONFIRM_FRAMES (1)
+    EXITED --> [*]
+
+    note right of CONFIRMED
+        Blur ON: CONFIRMED, VISUAL_LOST,
+        REACQUIRING, COASTING
+    end note
+    note right of PENDING
+        No blur: IDLE, PENDING,
+        CONFIRMING, EXITED
+    end note

@@ -88,6 +88,17 @@ static void local_uwb_address_init(void)
           (unsigned)m_local_uwb_addr[1]);
 }
 
+/* Sink for the FiRa per-round NLOS/link-quality record. Best-effort: streams
+ * one small FFF3 notification per round to the currently connected phone and
+ * silently drops the sample if no peer is connected/subscribed or the TX queue
+ * is full. Never blocks — runs in the FiRa diagnostics callback context. */
+static void ble_push_link_quality(const uint8_t *buf, uint16_t len)
+{
+    if (m_conn_handle == BLE_CONN_HANDLE_INVALID)
+        return;
+    (void)ble_fff0_quality_notify(&m_fff0, buf, len, m_conn_handle);
+}
+
 static void fff0_event_handler(ble_fff0_evt_t *p_evt)
 {
     switch (p_evt->type)
@@ -98,6 +109,14 @@ static void fff0_event_handler(ble_fff0_evt_t *p_evt)
 
         case BLE_FFF0_EVT_NOTIFY_DISABLED:
             QLOGI("FFF0: notifications disabled, conn=0x%04X", p_evt->conn_handle);
+            break;
+
+        case BLE_FFF0_EVT_QUALITY_NOTIFY_ENABLED:
+            QLOGI("FFF0: link-quality (FFF3) notifications enabled, conn=0x%04X", p_evt->conn_handle);
+            break;
+
+        case BLE_FFF0_EVT_QUALITY_NOTIFY_DISABLED:
+            QLOGI("FFF0: link-quality (FFF3) notifications disabled, conn=0x%04X", p_evt->conn_handle);
             break;
 
         case BLE_FFF0_EVT_PARAMS_WRITTEN:
@@ -197,6 +216,9 @@ static void services_init(void)
     APP_ERROR_CHECK(err_code);
     rtt_trace("ble: FFF0 service registered");
     QLOGI("ble: FFF0 service registered");
+
+    /* Route the FiRa per-round NLOS/link-quality record to the FFF3 notify. */
+    ble_session_register_link_quality_sink(ble_push_link_quality);
 }
 
 static void ble_stack_init(void)
